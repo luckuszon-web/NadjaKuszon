@@ -18,10 +18,11 @@ python3 -m http.server
 | `tilbud.html` | Terapi, parterapi, vaginal-terapi, workshop, polterabend, tantra-yoga |
 | `om-nadja.html` | Om Nadja, tilgang, uddannelser og medier |
 | `anbefalinger.html` | Klientanbefalinger |
+| `terapi.html`, `parterapi.html`, `vaginal-terapi.html`, `workshop-polterabend.html` | Undersider til de enkelte tilbud |
 | `priser.html` | Priser, betaling og afbud |
 | `kontakt.html` | Kontakt og åbningstider |
 | `assets/css/style.css` | Al styling (farver defineres øverst som variabler) |
 | `assets/js/main.js` | Mobilmenu og indtoning |
 | `assets/img/` | Billeder fra den nuværende side, komprimeret til web |
 
-Header og footer er ens på alle sider – husk at rette alle seks filer, hvis menuen ændres.
+Header og footer er ens på alle sider – husk at rette alle HTML-filerne, hvis menuen ændres.
