@@ -1,0 +1,11 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+# 301-viderestillinger fra den gamle side (Netlify / Cloudflare Pages-format).
+# Genereres fra src/_data/redirects.json – se REDIRECTS.md.
+# http:// og www. viderestilles til https://nadjakuszon.dk i hostens domæneindstillinger.
+{%- for r in redirects.aktive %}
+{{ r.fra | withoutSlash }}  {{ r.til }}  301
+{{ r.fra }}  {{ r.til }}  301
+{%- endfor %}
