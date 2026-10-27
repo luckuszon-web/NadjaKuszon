@@ -125,6 +125,7 @@ p { margin: 0 0 1em; }
   font-size: 1rem;
   font-weight: 600;
   border-radius: 999px;
+  white-space: nowrap;
 }
 .nav a:hover { color: var(--moss-dark); }
 .nav a[aria-current="page"]:not(.nav-button) { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 6px; text-decoration-thickness: 2px; }
@@ -164,7 +165,7 @@ p { margin: 0 0 1em; }
 .nav-toggle[aria-expanded="true"] .nav-toggle-bars::before { transform: translateY(6px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] .nav-toggle-bars::after { transform: translateY(-6px) rotate(-45deg); }
 
-@media (max-width: 1020px) {
+@media (max-width: 1140px) {
   .nav-toggle { display: inline-flex; }
   .nav {
     display: none;
@@ -400,6 +401,7 @@ p { margin: 0 0 1em; }
 }
 .timeline h3 { font-size: 1.4rem; margin: .1em 0 .2em; }
 .timeline p { margin: 0; color: var(--ink-soft); }
+.timeline p + p { margin-top: .5em; }
 .tl-year { font-size: .9rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--moss-dark); }
 
 /* ---------- Kontakt ---------- */
