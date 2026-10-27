@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: Viden & inspiration
+metaTitle: Viden & inspiration om astrologi og relationer | Nadja Kuszon
+description: Artikler af Nadja Kuszon om astrologi, kærlighed, relationer, lyst, tilknytning, tantra og bevidsthed. Inspiration til at forstå dine egne mønstre.
+permalink: /inspiration-viden/
+schema: []
+---
+<section class="page-hero">
+  {% set orbitClass = "orbit-page" %}{% include "partials/orbit.njk" %}
+  <div class="container narrow">
+    <h1>Viden &amp; inspiration</h1>
+    <p class="hero-lead">Artikler om astrologi, kærlighed, relationer og bevidsthed.</p>
+    <nav class="category-nav" aria-label="Kategorier">
+      {%- for c in collections.kategorisider %}
+      <a href="/inspiration-viden/kategori/{{ c.slug }}/">{{ c.name }}</a>
+      {%- endfor %}
+    </nav>
+  </div>
+</section>
+
+{%- for c in collections.kategorisider %}
+<section class="section{% if loop.index % 2 == 0 %} section-tint{% endif %}" aria-labelledby="kat-{{ c.slug }}">
+  <div class="container">
+    <div class="category-head">
+      <h2 id="kat-{{ c.slug }}">{{ c.name }}</h2>
+      <p>{{ c.intro }}</p>
+    </div>
+    {% set liste = c.artikler %}{% include "partials/artikelkort.njk" %}
+  </div>
+</section>
+{%- endfor %}

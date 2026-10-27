@@ -1,0 +1,9 @@
+<ul class="article-grid">
+  {%- for a in liste %}
+  <li class="article-card{% if a.data.featured %} is-featured{% endif %}">
+    <span class="article-ring" aria-hidden="true"></span>
+    <h3><a href="{{ a.url }}">{{ a.data.title }}</a></h3>
+    <p>{{ a.data.description }}</p>
+  </li>
+  {%- endfor %}
+</ul>

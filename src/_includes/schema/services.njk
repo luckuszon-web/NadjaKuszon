@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {%- for s in services %}
+    {
+      "@type": "Service",
+      "@id": "{{ site.url }}/astrologisk-terapi/#{{ s.anchor }}",
+      "name": "{{ s.fullName }}",
+      "serviceType": "Astrologisk terapi",
+      "description": "{{ s.summary }}",
+      "provider": { "@type": "Person", "@id": "{{ site.url }}/#nadja", "name": "Nadja Kuszon" },
+      "areaServed": { "@type": "Country", "name": "Danmark" },
+      "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
+      "url": "{{ site.url }}/astrologisk-terapi/#{{ s.anchor }}",
+      "offers": {
+        "@type": "Offer",
+        "price": "{{ s.price }}",
+        "priceCurrency": "DKK",
+        "url": "{{ site.url }}/kontakt/",
+        "description": "{{ s.minutes }} minutter"
+      }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>

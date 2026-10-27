@@ -1,0 +1,26 @@
+{
+  "_kommentar": "Ordrette citater fra den gamle side (nadjakuszon.dk/anbefalinger/ og sidens topcitater). Ret ikke i teksten. TODO(Nadja): godkend, at disse må bruges – se TODO.md.",
+  "udvalgte": [
+    {
+      "navn": "Mille, 27",
+      "tekst": [
+        "Nadja er et af de mest hjertevarme personer, jeg har mødt, og jeg har følt mig umådeligt tryg i hendes kyndige hænder.",
+        "Hun har ikke kun hjulpet mig med mit oprindelige problem, men har altid et råd parat til at håndtere alle livets aspekter, store som små.",
+        "Hun er yderst professionel og oprigtigt interesseret i at hjælpe med dit problem!"
+      ]
+    },
+    {
+      "navn": "Malou, 25",
+      "tekst": [
+        "Nadja er et helt igennem behageligt, hjertevarmt og positivt menneske, der med sin imødekommende og varme personlighed skaber netop det trygge rum, der skal til for at bearbejde smerter og følelser..."
+      ]
+    },
+    {
+      "navn": "Klient, der ønsker at være anonym",
+      "tekst": [
+        "Så kan jeg kun takke dig fordi du er så fantastisk sej. jeg havde aldrig klaret det her uden din hjælp!",
+        "De varmeste anbefalinger herfra"
+      ]
+    }
+  ]
+}

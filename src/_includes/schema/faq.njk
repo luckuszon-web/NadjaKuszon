@@ -1,0 +1,17 @@
+{%- set synlige = [] %}
+{%- for f in faq %}{% if f.svar %}{% set synlige = (synlige.push(f), synlige) %}{% endif %}{% endfor %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for f in synlige %}
+    {
+      "@type": "Question",
+      "name": {{ f.spoergsmaal | json | safe }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ f.svar | json | safe }} }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>

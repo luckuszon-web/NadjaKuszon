@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.kategorisider
+  size: 1
+  alias: kategori
+permalink: "/inspiration-viden/kategori/{{ kategori.slug }}/"
+eleventyComputed:
+  title: "{{ kategori.name }}"
+  metaTitle: "{{ kategori.name }} – Viden & inspiration | Nadja Kuszon"
+  description: "Artikler af Nadja Kuszon i kategorien {{ kategori.name }}. {{ kategori.intro }}"
+schema: []
+---
+<section class="page-hero">
+  {% set orbitClass = "orbit-page" %}{% include "partials/orbit.njk" %}
+  <div class="container narrow">
+    <p class="breadcrumb"><a href="/inspiration-viden/">Viden &amp; inspiration</a></p>
+    <h1>{{ kategori.name }}</h1>
+    <p class="hero-lead">{{ kategori.intro }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    {% set liste = kategori.artikler %}{% include "partials/artikelkort.njk" %}
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="container narrow">{% include "partials/astro-boks.njk" %}</div>
+</section>

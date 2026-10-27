@@ -1,0 +1,12 @@
+<div class="service-grid">
+  {%- for s in services %}
+  <article class="service-card">
+    <span class="service-ring" aria-hidden="true"></span>
+    <h3>{{ s.name }}</h3>
+    <p class="service-meta">{{ s.minutes }} minutter · {{ s.priceDisplay }}</p>
+    <p>{{ s.summary }}</p>
+    <p class="service-note">Online via Zoom</p>
+    <a class="btn" href="/kontakt/">{{ s.cta }}</a>
+  </article>
+  {%- endfor %}
+</div>

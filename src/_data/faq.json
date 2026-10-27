@@ -1,0 +1,29 @@
+[
+  {
+    "spoergsmaal": "Hvad skal du bruge for at lave mit horoskop?",
+    "svar": "Din fødselsdato, dit præcise fødselstidspunkt og dit fødested."
+  },
+  {
+    "spoergsmaal": "Hvad hvis jeg ikke kender mit fødselstidspunkt?",
+    "svar": "",
+    "todo": "TODO(Nadja): Nadjas eget svar – skjult indtil svaret findes."
+  },
+  {
+    "spoergsmaal": "Skal jeg vide noget om astrologi på forhånd?",
+    "svar": "Nej. Du skal blot være nysgerrig på dig selv."
+  },
+  {
+    "spoergsmaal": "Hvordan foregår sessionen?",
+    "svar": "Online via Zoom. Du er velkommen til selv at optage sessionen."
+  },
+  {
+    "spoergsmaal": "Kan jeg flytte eller aflyse min tid?",
+    "svar": "",
+    "todo": "TODO(Nadja): afbudsregler – skjult indtil svaret findes."
+  },
+  {
+    "spoergsmaal": "Erstatter astrologisk terapi behandling hos psykolog eller læge?",
+    "svar": "Nej. Astrologisk terapi er en samtale om selvindsigt og personlig udvikling. Den erstatter ikke behandling hos psykolog, psykiater eller læge. Hvis du har det svært psykisk, anbefaler jeg, at du også søger hjælp dér.",
+    "todo": "TODO(Nadja): godkend formuleringen."
+  }
+]
