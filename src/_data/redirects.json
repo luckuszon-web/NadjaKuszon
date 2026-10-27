@@ -1,0 +1,22 @@
+{
+  "_kommentar": "301-viderestillinger fra den gamle TYPO3-side. Bruges til _redirects (Netlify/Cloudflare Pages) og til midlertidige viderestillingssider på GitHub Pages-previewet. Se REDIRECTS.md.",
+  "aktive": [
+    { "fra": "/tilbud/", "til": "/astrologisk-terapi/", "grund": "Ydelsesoversigten erstattes af den nye ydelsesside" },
+    { "fra": "/tilbud/terapi/", "til": "/om-nadja/", "grund": "Sexologisk terapi er nu baggrund" },
+    { "fra": "/tilbud/parterapi/", "til": "/om-nadja/", "grund": "Parterapi er nu baggrund" },
+    { "fra": "/tilbud/smerteriunderlivet/", "til": "/om-nadja/", "grund": "Vaginal-terapi er nu baggrund" },
+    { "fra": "/tilbud/tantrayoga/", "til": "/inspiration-viden/kategori/tantra-bevidsthed/", "grund": "Indholdet er viden om tantra" },
+    { "fra": "/tilbud/workshoppolterabend/", "til": "/foredrag-og-events/", "grund": "Samme indhold i ny form" },
+    { "fra": "/anbefalinger/", "til": "/astrologisk-terapi/", "grund": "Anbefalingerne står nu ved ydelserne" },
+    { "fra": "/priser/", "til": "/astrologisk-terapi/", "grund": "Priserne står nu på ydelsessiden" }
+  ],
+  "afventer": [
+    { "fra": "/inspiration-viden/jeg-taler-ikke-om-mad/", "til": "/inspiration-viden/kategori/krop-kaerlighed-relationer/", "grund": "Foreslået fjernet: kun én sætning" },
+    { "fra": "/inspiration-viden/lyst/", "til": "/inspiration-viden/bevidst-lyst/", "grund": "Foreslået sammenlagt" },
+    { "fra": "/inspiration-viden/erotisk-fantasi-slip-kontrollen/", "til": "/inspiration-viden/fantasier-graenser/", "grund": "Foreslået sammenlagt" },
+    { "fra": "/inspiration-viden/din-hjerne-er-dit-mest-kraftfulde-erotiske-organ/", "til": "/inspiration-viden/lyst-starter-i-hjernen-men-foeles-i-kroppen/", "grund": "Foreslået sammenlagt" },
+    { "fra": "/inspiration-viden/vaginisme-vulvodyni/", "til": "/inspiration-viden/kategori/krop-kaerlighed-relationer/", "grund": "Foreslået fjernet: reklame for gammel ydelse" },
+    { "fra": "/inspiration-viden/fra-date-til-kaereste/", "til": "/inspiration-viden/haengeparti/", "grund": "Foreslået fjernet: kønsstereotyp, dækkes bedre af haengeparti" },
+    { "fra": "/inspiration-viden/det-et-onsdag/", "til": "/inspiration-viden/forventninger/", "grund": "Foreslået fjernet: dateret og ramt af spam" }
+  ]
+}

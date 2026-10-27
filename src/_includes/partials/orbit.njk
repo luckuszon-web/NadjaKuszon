@@ -1,0 +1,14 @@
+{#- Dekorativ horoskop-/planetbane-cirkel. Kun guld til streger, aldrig tekst. -#}
+<svg class="orbit {{ orbitClass }}" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+  <circle cx="200" cy="200" r="196" />
+  <circle cx="200" cy="200" r="168" stroke-dasharray="1 7" />
+  <circle cx="200" cy="200" r="132" />
+  <g class="orbit-spokes">
+    {%- for i in range(0, 12) %}
+    <line x1="200" y1="4" x2="200" y2="36" transform="rotate({{ i * 30 }} 200 200)" />
+    {%- endfor %}
+  </g>
+  <circle class="orbit-planet" cx="368" cy="200" r="5" />
+  <circle class="orbit-planet" cx="106.6" cy="106.6" r="3.5" />
+  <circle class="orbit-planet" cx="200" cy="332" r="4" />
+</svg>

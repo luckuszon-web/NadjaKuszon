@@ -1,0 +1,20 @@
+---
+pagination:
+  data: redirects.aktive
+  size: 1
+  alias: r
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <title>Siden er flyttet</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ r.til | absoluteUrl(site.url) }}">
+  <meta http-equiv="refresh" content="0; url={{ r.til }}">
+</head>
+<body>
+  <p>Siden er flyttet til <a href="{{ r.til }}">{{ r.til }}</a>.</p>
+</body>
+</html>

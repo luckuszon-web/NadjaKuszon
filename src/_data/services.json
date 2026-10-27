@@ -1,0 +1,26 @@
+[
+  {
+    "id": "horoskoptydning",
+    "name": "Dybdegående horoskoptydning",
+    "fullName": "Astrologisk terapi – dybdegående horoskoptydning",
+    "minutes": 90,
+    "price": 1490,
+    "priceDisplay": "1.490 kr.",
+    "summary": "Jeg analyserer dit fødselshoroskop før sessionen, og sammen forbinder vi de vigtigste tråde med dit virkelige liv.",
+    "note": "Forberedelse er inkluderet i prisen",
+    "cta": "Book din horoskoptydning",
+    "anchor": "horoskoptydning"
+  },
+  {
+    "id": "opfoelgning",
+    "name": "Opfølgende astrologisk terapi",
+    "fullName": "Opfølgende astrologisk terapi",
+    "minutes": 60,
+    "price": 990,
+    "priceDisplay": "990 kr.",
+    "summary": "Efter din grundtydning går vi i dybden med et bestemt livsområde eller et mønster, der fylder hos dig.",
+    "note": "Kræver en grundtydning først",
+    "cta": "Book en opfølgende session",
+    "anchor": "opfoelgning"
+  }
+]

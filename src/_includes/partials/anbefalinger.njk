@@ -1,0 +1,18 @@
+{#- TODO(Nadja): anbefalingerne skal godkendes – se TODO.md. Teksten er ordret fra den gamle side. -#}
+<section class="section testimonials" aria-labelledby="anbefalinger-titel" id="anbefalinger">
+  <div class="container">
+    <h2 class="section-title center" id="anbefalinger-titel">{{ anbefalingTitel or "Det siger mine klienter" }}</h2>
+    <div class="testimonial-grid">
+      {%- for a in anbefalinger.udvalgte %}
+      <figure class="testimonial">
+        <blockquote>
+          {%- for linje in a.tekst %}
+          <p>{{ linje }}</p>
+          {%- endfor %}
+        </blockquote>
+        <figcaption>{{ a.navn }}</figcaption>
+      </figure>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

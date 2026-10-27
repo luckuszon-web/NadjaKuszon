@@ -1,0 +1,24 @@
+{
+  "name": "Nadja Kuszon",
+  "title": "Astrolog & astrologisk terapi",
+  "url": "https://nadjakuszon.dk",
+  "lang": "da",
+  "locale": "da_DK",
+  "legalName": "Soul Life v/ Nadja Kuszon",
+  "cvr": "36341386",
+  "phone": "+4521218894",
+  "phoneDisplay": "21 21 88 94",
+  "email": "nadjakuszon@gmail.com",
+  "location": "Online via Zoom",
+  "facebook": "https://web.facebook.com/Nadja-kuszon-940948079250800/",
+  "linkedin": "https://www.linkedin.com/in/nadja-kuszon-79077463",
+  "ogImage": "/assets/img/og-nadja-kuszon.jpg",
+  "nav": [
+    { "label": "Forside", "url": "/" },
+    { "label": "Astrologisk terapi", "url": "/astrologisk-terapi/" },
+    { "label": "Foredrag & events", "url": "/foredrag-og-events/" },
+    { "label": "Om Nadja", "url": "/om-nadja/" },
+    { "label": "Viden & inspiration", "url": "/inspiration-viden/" },
+    { "label": "Kontakt / Book tid", "url": "/kontakt/", "button": true }
+  ]
+}

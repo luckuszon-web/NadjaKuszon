@@ -1,0 +1,19 @@
+# 301-viderestillinger fra den gamle side (Netlify / Cloudflare Pages-format).
+# Genereres fra src/_data/redirects.json – se REDIRECTS.md.
+# http:// og www. viderestilles til https://nadjakuszon.dk i hostens domæneindstillinger.
+/tilbud  /astrologisk-terapi/  301
+/tilbud/  /astrologisk-terapi/  301
+/tilbud/terapi  /om-nadja/  301
+/tilbud/terapi/  /om-nadja/  301
+/tilbud/parterapi  /om-nadja/  301
+/tilbud/parterapi/  /om-nadja/  301
+/tilbud/smerteriunderlivet  /om-nadja/  301
+/tilbud/smerteriunderlivet/  /om-nadja/  301
+/tilbud/tantrayoga  /inspiration-viden/kategori/tantra-bevidsthed/  301
+/tilbud/tantrayoga/  /inspiration-viden/kategori/tantra-bevidsthed/  301
+/tilbud/workshoppolterabend  /foredrag-og-events/  301
+/tilbud/workshoppolterabend/  /foredrag-og-events/  301
+/anbefalinger  /astrologisk-terapi/  301
+/anbefalinger/  /astrologisk-terapi/  301
+/priser  /astrologisk-terapi/  301
+/priser/  /astrologisk-terapi/  301

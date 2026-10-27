@@ -1,0 +1,16 @@
+{
+  "name": "nadjakuszon-dk",
+  "private": true,
+  "description": "Nadja Kuszon – astrologisk terapi og horoskoptydning",
+  "scripts": {
+    "build": "eleventy",
+    "build:pages": "rm -rf docs && cross-env SITE_PREVIEW=1 eleventy --pathprefix=/NadjaKuszon/ --output=docs",
+    "start": "eleventy --serve",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6",
+    "cross-env": "7.0.3"
+  },
+  "type": "module"
+}

@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+title: Kontakt
+metaTitle: Book tid eller kontakt Nadja Kuszon
+description: Book en dybdegående horoskoptydning eller kontakt astrolog Nadja Kuszon. Skriv en sms, ring på 21 21 88 94 eller send en mail. Sessioner online via Zoom.
+permalink: /kontakt/
+schema: ["person"]
+---
+<section class="page-hero">
+  {% set orbitClass = "orbit-page" %}{% include "partials/orbit.njk" %}
+  <div class="container narrow">
+    <h1>Kontakt og book tid</h1>
+    <p class="hero-lead">Skriv en sms for at booke tid, eller ring, hvis du ønsker at høre nærmere.</p>
+  </div>
+</section>
+
+<section class="section" id="book">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="service-ring" aria-hidden="true"></span>
+        <h2>Sms eller ring</h2>
+        <p class="contact-value"><a href="tel:{{ site.phone }}">{{ site.phoneDisplay }}</a></p>
+        <p>Den hurtigste vej til en tid.</p>
+        <a class="btn" href="sms:{{ site.phone }}">Send en sms</a>
+      </div>
+      <div class="contact-card">
+        <span class="service-ring" aria-hidden="true"></span>
+        <h2>E-mail</h2>
+        <p class="contact-value"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p>Til spørgsmål og forespørgsler om foredrag og events.</p>
+        <a class="btn btn-ghost" href="mailto:{{ site.email }}">Skriv en mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="container narrow prose">
+    <h2>Når du booker en horoskoptydning</h2>
+    <p>For at jeg kan beregne dit fødselshoroskop, skal jeg bruge din fødselsdato, dit præcise fødselstidspunkt og dit fødested.</p>
+    <p>Alle sessioner foregår online via Zoom.</p>
+    <ul class="ring-list">
+      {%- for s in services %}
+      <li><a href="/astrologisk-terapi/#{{ s.anchor }}">{{ s.name }}</a> – {{ s.minutes }} minutter · {{ s.priceDisplay }}</li>
+      {%- endfor %}
+    </ul>
+    {#- TODO(Nadja): afbudsregler – vises her, når de er afklaret. Se TODO.md. #}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow prose center">
+    <p class="legal-line">{{ site.legalName }} · CVR {{ site.cvr }}</p>
+  </div>
+</section>
