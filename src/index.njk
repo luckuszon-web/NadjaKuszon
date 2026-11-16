@@ -1,23 +1,34 @@
 ---
 layout: layouts/base.njk
 title: Forside
-metaTitle: Nadja Kuszon – Astrolog & astrologisk terapi online
-description: Astrolog Nadja Kuszon tilbyder astrologisk terapi og dybdegående horoskoptydning online. Forstå dit fødselshoroskop, dine mønstre og din kerne.
+metaTitle: Nadja Kuszon – Astrolog & personlig horoskoptydning online
+description: Personlig horoskoptydning online med Nadja Kuszon. Dit fødselshoroskop og dine aktuelle transitter belyser det, du står i lige nu. 30 min. på Zoom.
 bodyClass: page-home
 schema: ["person", "services"]
 ---
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-text">
-      <h1>Astrologisk terapi og dybdegående horoskoptydning</h1>
-      <p class="hero-lead">Se din kerne. Forstå dine mønstre. Lev mere bevidst.</p>
-      <p>Jeg hjælper dig med at gøre det ubevidste bevidst gennem en dybdegående tydning af dit fødselshoroskop. Her mødes astrologiens symbolsprog, psykologisk indsigt og mit terapeutiske arbejde med mennesker siden 2013.</p>
-      <a class="btn btn-large" href="/kontakt/">Book en horoskoptydning</a>
+      <h1>Personlig horoskoptydning</h1>
+      <p class="hero-lead">Står du et sted i livet, hvor noget har ændret sig, og du endnu ikke ved, hvilken vej du skal gå?</p>
+      <p>Et brud, en krise eller et valg, du har udskudt længe, kan få dig til at spørge: Hvorfor rammer det mig så hårdt? Hvad har jeg brug for lige nu? Og hvordan kommer jeg videre?</p>
+      <p class="offer-facts">30 minutter på Zoom · 600 kr. i introduktionspris</p>
+      <a class="btn btn-large" href="{{ site.bookingUrl }}">Book din horoskoptydning</a>
     </div>
     <div class="hero-portrait">
       {% set orbitClass = "orbit-hero" %}{% include "partials/orbit.njk" %}
       <img class="portrait-circle" src="/assets/img/nadja-portraet.jpg" alt="Portræt af astrolog Nadja Kuszon, der smiler i sollys" width="640" height="640" fetchpriority="high">
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow prose">
+    <p class="lead">Jeg bruger astrologi til at skabe bevidsthed om det, du oplever i dit eget liv. Dit fødselshoroskop er vores udgangspunkt for at se på dine mønstre, behov og styrker. Med dine aktuelle transitter ser vi også på, hvilke temaer der træder særligt frem lige nu. Du kan tage en konkret situation eller et spørgsmål med, så vi kan koble tydningen til det, du faktisk står i.</p>
+    <p>Nogle gange opdager vi først gennem smerte, hvad vi har brug for, hvor vores grænser går, eller hvad vi længes efter at gøre anderledes. I samtalen undersøger vi, hvilke styrker du allerede kan trække på, hvilke muligheder du måske har overset, og hvad der kunne være dit næste skridt på en vej, der føles rigtig for dig.</p>
+    <p>Jeg forbereder din tydning inden vi mødes. Min baggrund som sexolog og parterapeut hjælper mig med at stille spørgsmål og give plads til det, der kan være svært at sætte ord på. Du kan også booke, hvis du bare er nysgerrig på dit horoskop og gerne vil lære dig selv bedre at kende.</p>
+    <p class="offer-facts">30 minutter på Zoom · 600 kr. i introduktionspris</p>
+    <a class="btn" href="{{ site.bookingUrl }}">Book din horoskoptydning</a>
   </div>
 </section>
 
@@ -39,7 +50,7 @@ schema: ["person", "services"]
 <section class="section">
   <div class="container two-col two-col-media">
     <div class="media-circle">
-      <img src="/assets/img/nadja-om.jpg" alt="Nadja Kuszon i varmt sollys" width="840" height="840" loading="lazy">
+      <img src="/assets/img/nadja-hat.jpg" alt="Nadja Kuszon med hat foran grønne blade" width="840" height="1120" loading="lazy">
     </div>
     <div>
       <h2 class="section-title">Hvorfor Nadja?</h2>

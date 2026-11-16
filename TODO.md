@@ -30,6 +30,8 @@ Spammen er fjernet fra den nye side og fra Word-arkivet i `tekstarkiv/`.
 | 14 | **Åbningstider:** De gamle åbningstider er ikke vist. Skal der stå tider for online sessioner? | `src/kontakt.njk` | Ikke vist |
 | 15 | **Adresse:** Den gamle footer linkede til Søndre Jernbanevej 4E, Hillerød. Den nye side skriver kun "Online via Zoom". Skal en adresse stå? | `src/_data/site.json` | Ikke vist |
 | 16 | **Statistik:** Den gamle Google Analytics-kode virker ikke længere. Ønskes ny statistik? I så fald anbefales en cookiefri løsning (fx Plausible), så der ikke skal være cookiebanner. | – | Ingen statistik |
+| 17 | **Bookinglink:** "Book din horoskoptydning" skal føre direkte til booking. Der findes intet bookingsystem, så knapperne fører til bookingafsnittet på kontaktsiden (`/kontakt/#book`). Har Nadja et bookinglink (fx SimplyBook, Planway eller Calendly)? Det skal kun rettes ét sted. | `src/_data/site.json` → `bookingUrl` | Fører til kontaktsiden |
+| 18 | **Introduktionspris:** Forsiden tilbyder nu 30 minutter for 600 kr. i introduktionspris, mens kortene længere nede og siden Horoskoptydning stadig viser 90 min./1.490 kr. og 60 min./990 kr. Erstatter introduktionstilbuddet de to andre, eller skal alle tre stå? Hvor længe gælder introduktionsprisen? | `src/index.njk`, `src/_data/services.json` | Alle tre vises |
 
 ## Anbefalinger, der ikke bruges
 
