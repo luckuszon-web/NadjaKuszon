@@ -14,7 +14,7 @@
   {
     "id": "horoskoptydning",
     "name": "Dybdegående horoskoptydning",
-    "fullName": "Astrologisk terapi – dybdegående horoskoptydning",
+    "fullName": "Dybdegående horoskoptydning",
     "minutes": 90,
     "price": 1490,
     "priceDisplay": "1.490 kr.",
@@ -25,8 +25,8 @@
   },
   {
     "id": "opfoelgning",
-    "name": "Opfølgende astrologisk terapi",
-    "fullName": "Opfølgende astrologisk terapi",
+    "name": "Opfølgende horoskoptydning",
+    "fullName": "Opfølgende horoskoptydning",
     "minutes": 60,
     "price": 990,
     "priceDisplay": "990 kr.",

@@ -93,7 +93,7 @@ for (const p of pages) {
   if (/TODO|\[INDSÆT DOMÆNE|lorem ipsum/.test(t)) fail(`${p.url}: synlig pladsholder/TODO`);
 }
 
-// 5. Gamle ydelser: må kun nævnes som baggrund (Om Nadja, kort på Astrologisk terapi, blog, events)
+// 5. Gamle ydelser: må kun nævnes som baggrund (Om Nadja, kort på Horoskoptydning, blog, events)
 const OLD = /sexolog|parterapi|vaginal|tarot|clairvoyance/i;
 const BACKGROUND_OK = (u) => u.startsWith("/om-nadja/") || u.startsWith("/inspiration-viden/") || u === "/astrologisk-terapi/" || u === "/foredrag-og-events/" || u === "/" ;
 for (const p of pages) {
