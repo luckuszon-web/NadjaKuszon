@@ -1,7 +1,9 @@
-<section class="section section-tint" id="priser" aria-labelledby="priser-titel">
+<section class="section{% if not priserSide %} section-tint{% endif %}" id="priser"{% if not priserSide %} aria-labelledby="priser-titel"{% endif %}>
   <div class="container narrow">
+    {%- if not priserSide %}
     <h2 id="priser-titel">Priser</h2>
-    <ul class="price-list">
+    {%- endif %}
+    <ul class="price-list{% if priserSide %} price-list-page{% endif %}">
       {%- for s in services %}
       <li>
         <span class="price-name">{{ s.name }}{% if s.note == "Introduktionspris" %} <span class="price-tag">Introduktionspris</span>{% endif %}</span>

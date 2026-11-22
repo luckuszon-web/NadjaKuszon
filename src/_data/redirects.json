@@ -7,8 +7,7 @@
     { "fra": "/tilbud/smerteriunderlivet/", "til": "/om-nadja/", "grund": "Vaginal-terapi er nu baggrund" },
     { "fra": "/tilbud/tantrayoga/", "til": "/inspiration-viden/kategori/tantra-bevidsthed/", "grund": "Indholdet er viden om tantra" },
     { "fra": "/tilbud/workshoppolterabend/", "til": "/foredrag-og-events/", "grund": "Samme indhold i ny form" },
-    { "fra": "/anbefalinger/", "til": "/astrologisk-terapi/", "grund": "Anbefalingerne står nu ved ydelserne" },
-    { "fra": "/priser/", "til": "/astrologisk-terapi/#priser", "grund": "Priserne står nu i prisrubrikken på ydelsessiden" }
+    { "fra": "/anbefalinger/", "til": "/astrologisk-terapi/", "grund": "Anbefalingerne står nu ved ydelserne" }
   ],
   "afventer": [
     { "fra": "/inspiration-viden/jeg-taler-ikke-om-mad/", "til": "/inspiration-viden/kategori/krop-kaerlighed-relationer/", "grund": "Foreslået fjernet: kun én sætning" },

@@ -5,14 +5,14 @@
     {%- for s in services %}
     {
       "@type": "Service",
-      "@id": "{{ site.url }}/astrologisk-terapi/#{{ s.anchor }}",
+      "@id": "{{ s.url | absoluteUrl(site.url) }}#service",
       "name": "{{ s.fullName }}",
       "serviceType": "Astrologisk terapi",
       "description": "{{ s.summary }}",
       "provider": { "@type": "Person", "@id": "{{ site.url }}/#nadja", "name": "Nadja Kuszon" },
       "areaServed": { "@type": "Country", "name": "Danmark" },
       "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
-      "url": "{{ site.url }}/astrologisk-terapi/#{{ s.anchor }}",
+      "url": "{{ s.url | absoluteUrl(site.url) }}",
       "offers": {
         "@type": "Offer",
         "price": "{{ s.price }}",

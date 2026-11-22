@@ -36,7 +36,7 @@ for (const p of pages) {
   if (!title) fail(`${p.url}: mangler <title>`);
   if (!desc) fail(`${p.url}: mangler meta-beskrivelse`);
   if (h1 !== 1) fail(`${p.url}: ${h1} H1'er (skal være 1)`);
-  if (navItems !== 6) fail(`${p.url}: menuen har ${navItems} punkter (skal være 6)`);
+  if (navItems !== 7) fail(`${p.url}: menuen har ${navItems} punkter (skal være 7)`);
   if (!p.html.includes("Soul Life v/ Nadja Kuszon · CVR 36341386")) fail(`${p.url}: footer mangler Soul Life-linjen`);
   if (titles.has(title)) fail(`Dublet-titel: "${title}" på ${p.url} og ${titles.get(title)}`);
   titles.set(title, p.url);

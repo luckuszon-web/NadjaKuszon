@@ -119,7 +119,7 @@ p { margin: 0 0 1em; }
 .nav ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 4px; }
 .nav a {
   display: block;
-  padding: 8px 12px;
+  padding: 8px 10px;
   color: var(--ink);
   text-decoration: none;
   font-size: 1rem;
@@ -165,7 +165,7 @@ p { margin: 0 0 1em; }
 .nav-toggle[aria-expanded="true"] .nav-toggle-bars::before { transform: translateY(6px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] .nav-toggle-bars::after { transform: translateY(-6px) rotate(-45deg); }
 
-@media (max-width: 1220px) {
+@media (max-width: 1260px) {
   .nav-toggle { display: inline-flex; }
   .nav {
     display: none;

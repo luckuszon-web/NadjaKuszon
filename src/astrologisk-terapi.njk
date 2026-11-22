@@ -97,7 +97,12 @@ schema: ["services", "faq"]
 </section>
 
 {% set anbefalingTitel = "Det siger mine klienter" %}
-{% include "partials/priser.njk" %}
+<section class="section section-tint">
+  <div class="container narrow center">
+    <p class="lead">Se alle priser, tillæg, betaling og afbudsregler samlet ét sted.</p>
+    <a class="btn btn-ghost" href="/priser/">Se priser</a>
+  </div>
+</section>
 
 {% include "partials/anbefalinger.njk" %}
 

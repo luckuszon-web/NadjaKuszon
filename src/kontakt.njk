@@ -42,7 +42,7 @@ schema: ["person"]
     <p>Alle sessioner foregår online via Zoom.</p>
     <ul class="ring-list">
       {%- for s in services %}
-      <li><a href="/astrologisk-terapi/#{{ s.anchor }}">{{ s.name }}</a> – {{ s.minutes }} minutter · {{ s.priceDisplay }}</li>
+      <li><a href="{{ s.url }}">{{ s.name }}</a> – {{ s.minutes }} minutter · {{ s.priceDisplay }}</li>
       {%- endfor %}
     </ul>
     {#- TODO(Nadja): afbudsregler – vises her, når de er afklaret. Se TODO.md. #}

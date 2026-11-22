@@ -17,6 +17,7 @@
   "nav": [
     { "label": "Forside", "url": "/" },
     { "label": "Horoskoptydning", "url": "/astrologisk-terapi/" },
+    { "label": "Priser", "url": "/priser/" },
     { "label": "Foredrag & events", "url": "/foredrag-og-events/" },
     { "label": "Om Nadja", "url": "/om-nadja/" },
     { "label": "Viden & inspiration", "url": "/inspiration-viden/" },

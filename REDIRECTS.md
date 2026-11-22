@@ -17,9 +17,8 @@ Den gamle side (TYPO3 på nadjakuszon.dk) havde 49 URL'er. Alle er gennemgået h
 | `/tilbud/tantrayoga/` | `/inspiration-viden/kategori/tantra-bevidsthed/` | Indholdet er viden om tantra |
 | `/tilbud/workshoppolterabend/` | `/foredrag-og-events/` | Samme indhold i ny form |
 | `/anbefalinger/` | `/astrologisk-terapi/` | Anbefalingerne står nu ved ydelserne |
-| `/priser/` | `/astrologisk-terapi/` | Priserne står nu på ydelsessiden |
 
-Hver regel findes både med og uden afsluttende skråstreg (fx `/priser` og `/priser/`), så der aldrig opstår en kæde.
+Hver regel findes både med og uden afsluttende skråstreg (fx `/anbefalinger` og `/anbefalinger/`), så der aldrig opstår en kæde.
 
 ## Uændrede URL'er (svarer 200)
 
@@ -28,6 +27,7 @@ Hver regel findes både med og uden afsluttende skråstreg (fx `/priser` og `/pr
 | `/` | Ny forside |
 | `/om-nadja/` | Nyt indhold |
 | `/kontakt/` | Nyt indhold, menunavn "Kontakt / Book tid" |
+| `/priser/` | Egen side igen med de nye priser (menupunktet "Priser") |
 | `/inspiration-viden/` | Menunavn ændret til "Viden & inspiration" |
 | `/inspiration-viden/<artikel>/` | **Alle 37 artikler beholder deres URL** |
 
@@ -64,7 +64,7 @@ Siden bliver på GitHub Pages. GitHub Pages kan ikke lave rigtige 301'ere, så d
    - Opret en CNAME `www.nadjakuszon.dk` → `luckuszon-web.github.io`.
    - **Rør ikke** MX-, TXT- og SRV-records. De hører til mailen hos Gigahost.
 4. **HTTPS:** Når GitHub har godkendt domænet (minutter til et døgn), sættes flueben i *Enforce HTTPS*.
-5. **Test:** `https://nadjakuszon.dk`, `www.`, `http://` og fx `/priser/` skal alle ende på den nye side.
+5. **Test:** `https://nadjakuszon.dk`, `www.`, `http://` og fx `/anbefalinger/` skal alle ende på den nye side.
 6. **Efter en uge:** Bed TypoConsult om at lukke den gamle side, og fjern evt. `ip4:178.72.21.224` fra SPF-recorden.
 
 *Alternativ:* Flyttes siden senere til Netlify eller Cloudflare Pages, bruges `npm run build` (output i `_site/`) i stedet. Dér laver `_redirects` rigtige 301'ere.

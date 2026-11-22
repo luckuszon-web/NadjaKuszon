@@ -9,7 +9,7 @@
     "summary": "Dit fødselshoroskop og dine aktuelle transitter koblet til det, du står i lige nu. Tag gerne en konkret situation eller et spørgsmål med.",
     "note": "Introduktionspris",
     "cta": "Book din horoskoptydning",
-    "anchor": "priser"
+    "url": "/priser/"
   },
   {
     "id": "horoskoptydning",
@@ -21,7 +21,7 @@
     "summary": "Jeg analyserer dit fødselshoroskop før sessionen, og sammen forbinder vi de vigtigste tråde med dit virkelige liv.",
     "note": "Forberedelse er inkluderet i prisen",
     "cta": "Book din horoskoptydning",
-    "anchor": "horoskoptydning"
+    "url": "/astrologisk-terapi/#horoskoptydning"
   },
   {
     "id": "opfoelgning",
@@ -33,6 +33,6 @@
     "summary": "Efter din grundtydning går vi i dybden med et bestemt livsområde eller et mønster, der fylder hos dig.",
     "note": "Kræver en grundtydning først",
     "cta": "Book en opfølgende session",
-    "anchor": "opfoelgning"
+    "url": "/astrologisk-terapi/#opfoelgning"
   }
 ]
