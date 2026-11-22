@@ -123,7 +123,8 @@ const server = http.createServer((req, res) => {
 });
 await new Promise((r) => server.listen(0, r));
 const port = server.address().port;
-const get = (u) => new Promise((r) => http.get({ port, path: u }, (res) => { res.resume(); r({ status: res.statusCode, location: res.headers.location }); }));
+// Fragmentet (#…) sendes aldrig til serveren af en browser
+const get = (u) => new Promise((r) => http.get({ port, path: u.split("#")[0] }, (res) => { res.resume(); r({ status: res.statusCode, location: res.headers.location }); }));
 let tested = 0;
 for (const old of OLD_URLS) {
   for (const variant of [old, old.replace(/\/$/, "") || "/"]) {

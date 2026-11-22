@@ -1,5 +1,17 @@
 [
   {
+    "id": "intro",
+    "name": "Personlig horoskoptydning",
+    "fullName": "Personlig horoskoptydning (introduktionspris)",
+    "minutes": 30,
+    "price": 600,
+    "priceDisplay": "600 kr.",
+    "summary": "Dit fødselshoroskop og dine aktuelle transitter koblet til det, du står i lige nu. Tag gerne en konkret situation eller et spørgsmål med.",
+    "note": "Introduktionspris",
+    "cta": "Book din horoskoptydning",
+    "anchor": "priser"
+  },
+  {
     "id": "horoskoptydning",
     "name": "Dybdegående horoskoptydning",
     "fullName": "Astrologisk terapi – dybdegående horoskoptydning",

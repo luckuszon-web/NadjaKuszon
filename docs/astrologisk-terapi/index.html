@@ -31,6 +31,24 @@
   "@graph": [
     {
       "@type": "Service",
+      "@id": "https://nadjakuszon.dk/astrologisk-terapi/#priser",
+      "name": "Personlig horoskoptydning (introduktionspris)",
+      "serviceType": "Astrologisk terapi",
+      "description": "Dit fødselshoroskop og dine aktuelle transitter koblet til det, du står i lige nu. Tag gerne en konkret situation eller et spørgsmål med.",
+      "provider": { "@type": "Person", "@id": "https://nadjakuszon.dk/#nadja", "name": "Nadja Kuszon" },
+      "areaServed": { "@type": "Country", "name": "Danmark" },
+      "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
+      "url": "https://nadjakuszon.dk/astrologisk-terapi/#priser",
+      "offers": {
+        "@type": "Offer",
+        "price": "600",
+        "priceCurrency": "DKK",
+        "url": "https://nadjakuszon.dk/kontakt/",
+        "description": "30 minutter"
+      }
+    },
+    {
+      "@type": "Service",
       "@id": "https://nadjakuszon.dk/astrologisk-terapi/#horoskoptydning",
       "name": "Astrologisk terapi – dybdegående horoskoptydning",
       "serviceType": "Astrologisk terapi",
@@ -89,6 +107,11 @@
       "@type": "Question",
       "name": "Hvordan foregår sessionen?",
       "acceptedAnswer": { "@type": "Answer", "text": "Online via Zoom. Du er velkommen til selv at optage sessionen." }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan jeg flytte eller aflyse min tid?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja, din tid kan ændres eller aflyses senest 48 timer før via sms på 21 21 88 94. Aflyses der senere, koster det 500 kr." }
     },
     {
       "@type": "Question",
@@ -242,6 +265,54 @@
 </section>
 
 
+<section class="section section-tint" id="priser" aria-labelledby="priser-titel">
+  <div class="container narrow">
+    <h2 id="priser-titel">Priser</h2>
+    <ul class="price-list">
+      <li>
+        <span class="price-name">Personlig horoskoptydning <span class="price-tag">Introduktionspris</span></span>
+        <span class="price-meta">30 minutter · online via Zoom</span>
+        <span class="price-amount">600 kr.</span>
+      </li>
+      <li>
+        <span class="price-name">Dybdegående horoskoptydning</span>
+        <span class="price-meta">90 minutter · online via Zoom · forberedelse inkluderet</span>
+        <span class="price-amount">1.490 kr.</span>
+      </li>
+      <li>
+        <span class="price-name">Opfølgende astrologisk terapi</span>
+        <span class="price-meta">60 minutter · online via Zoom · efter en grundtydning</span>
+        <span class="price-amount">990 kr.</span>
+      </li>
+      <li>
+        <span class="price-name">Polterabend, fødselsdag eller event</span><span class="price-meta">1,5 time · hos jer på Sjælland · transporttillæg</span>
+        <span class="price-amount">3.500 kr.</span>
+      </li>
+      <li>
+        <span class="price-name">Weekendtillæg</span>
+        <span class="price-amount">200 kr.</span>
+      </li>
+      <li>
+        <span class="price-name">Studerende</span><span class="price-meta">Oplys det ved booking</span>
+        <span class="price-amount">10 % rabat pr. session</span>
+      </li>
+    </ul>
+    <p class="price-note">Alle priser er inkl. moms.</p>
+    <div class="price-info">
+      <div>
+        <h3>Betaling</h3>
+        <p>Du kan betale med MobilePay på 21 21 88 94 eller ved bankoverførsel inden sessionen: Nordea, reg.nr. 5501, kontonr. 8977351635.</p>
+      </div>
+      <div>
+        <h3>Ændringer og afbud</h3>
+        <p>Da min virksomhed er sårbar over for aflysninger, kan din tid ændres eller aflyses senest 48 timer før via sms på 21 21 88 94. Aflyses der senere, koster det 500 kr., som du kan betale med MobilePay eller overførsel. Tak for din forståelse.</p>
+      </div>
+    </div>
+    <a class="btn" href="/kontakt/#book">Book din horoskoptydning</a>
+  </div>
+</section>
+
+
 <section class="section testimonials" aria-labelledby="anbefalinger-titel" id="anbefalinger">
   <div class="container">
     <h2 class="section-title center" id="anbefalinger-titel">Det siger mine klienter</h2>
@@ -295,6 +366,10 @@
       <details>
         <summary>Hvordan foregår sessionen?</summary>
         <p>Online via Zoom. Du er velkommen til selv at optage sessionen.</p>
+      </details>
+      <details>
+        <summary>Kan jeg flytte eller aflyse min tid?</summary>
+        <p>Ja, din tid kan ændres eller aflyses senest 48 timer før via sms på 21 21 88 94. Aflyses der senere, koster det 500 kr.</p>
       </details>
       <details>
         <summary>Erstatter astrologisk terapi behandling hos psykolog eller læge?</summary>

@@ -18,8 +18,8 @@
   },
   {
     "spoergsmaal": "Kan jeg flytte eller aflyse min tid?",
-    "svar": "",
-    "todo": "TODO(Nadja): afbudsregler – skjult indtil svaret findes."
+    "svar": "Ja, din tid kan ændres eller aflyses senest 48 timer før via sms på 21 21 88 94. Aflyses der senere, koster det 500 kr.",
+    "todo": "Afbudsregel fra den gamle prisside (48 timer / 500 kr.). TODO(Nadja): bekræft – den gamle kontaktside nævnte 24 timer."
   },
   {
     "spoergsmaal": "Erstatter astrologisk terapi behandling hos psykolog eller læge?",

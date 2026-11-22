@@ -1,0 +1,33 @@
+<section class="section section-tint" id="priser" aria-labelledby="priser-titel">
+  <div class="container narrow">
+    <h2 id="priser-titel">Priser</h2>
+    <ul class="price-list">
+      {%- for s in services %}
+      <li>
+        <span class="price-name">{{ s.name }}{% if s.note == "Introduktionspris" %} <span class="price-tag">Introduktionspris</span>{% endif %}</span>
+        <span class="price-meta">{{ s.minutes }} minutter · online via Zoom{% if s.id == "horoskoptydning" %} · forberedelse inkluderet{% endif %}{% if s.id == "opfoelgning" %} · efter en grundtydning{% endif %}</span>
+        <span class="price-amount">{{ s.priceDisplay }}</span>
+      </li>
+      {%- endfor %}
+      {%- for t in priser.tillaeg %}
+      <li>
+        <span class="price-name">{{ t.navn }}</span>
+        {%- if t.detalje %}<span class="price-meta">{{ t.detalje }}</span>{% endif %}
+        <span class="price-amount">{{ t.pris }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="price-note">{{ priser.moms }}</p>
+    <div class="price-info">
+      <div>
+        <h3>Betaling</h3>
+        <p>{{ priser.betaling }}</p>
+      </div>
+      <div>
+        <h3>Ændringer og afbud</h3>
+        <p>{{ priser.afbud }}</p>
+      </div>
+    </div>
+    <a class="btn" href="{{ site.bookingUrl }}">Book din horoskoptydning</a>
+  </div>
+</section>

@@ -16,8 +16,8 @@ Spammen er fjernet fra den nye side og fra Word-arkivet i `tekstarkiv/`.
 |---|---|---|---|
 | 1 | Hvad er svaret, hvis kunden ikke kender sit fødselstidspunkt? | `src/_data/faq.json` | Spørgsmålet er skjult i FAQ'en |
 | 2 | Er de 90 minutter selve sessionen, eller indgår forberedelsen i de 90 minutter? | `src/astrologisk-terapi.njk` | Viser "90 minutter · 1.490 kr. · Forberedelse er inkluderet i prisen" |
-| 3 | Er hun momsregistreret? Priser til private skal vises inkl. moms. *(Den gamle prisside skrev "Alle priser er inkl. moms".)* | `src/_data/services.json` | Priserne vises uden momsnote |
-| 4 | Hvad er afbudsreglerne? *(Den gamle side havde to modstridende regler: 48 timer/500 kr. på Priser og 24 timer/fuld pris på Kontakt.)* | `src/_data/faq.json`, `src/kontakt.njk` | Skjult |
+| 3 | ~~Moms~~ | `src/_data/priser.json` | ✅ Den gamle prisside: "Alle priser er inkl. moms". Står nu i prisrubrikken |
+| 4 | **Afbud:** Prisrubrikken og FAQ'en bruger nu reglen fra den gamle prisside (48 timer, ellers 500 kr.). Den gamle kontaktside sagde 24 timer/fuld pris. Er 48 timer/500 kr. korrekt? | `src/_data/priser.json`, `src/_data/faq.json` | Vises |
 | 5 | Bookingsystem: der er intet i dag. Booking sker via sms, telefon og mail, så der er intet eksternt system at rydde op i. Ønskes et online bookingsystem? | `src/kontakt.njk` | Knapperne fører til kontaktsiden |
 | 6 | Må de valgte anbefalinger bruges? Se nedenfor. Findes der anbefalinger fra horoskoptydninger? | `src/_data/anbefalinger.json` | Tre anbefalinger vises ordret |
 | 7 | Foredrag & events: pris, varighed, antal deltagere og geografi. *(Fra den gamle side vises nu: polterabend 1,5 time, 3.500 kr., typisk 8–12 deltagere, Sjælland, transport tillægges.)* Gælder det også de nye formater (astrologisk polterabend, minitydninger, foredrag, kvindecirkler)? | `src/foredrag-og-events.njk` | Kun polterabend-oplysningerne vises |

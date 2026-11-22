@@ -1,0 +1,23 @@
+{
+  "_kommentar": "Prisrubrikken på Horoskoptydning-siden. Kun aktuelle ydelser – de gamle sexologiske ydelser må ikke kunne bestilles. Tillæg, rabat, betaling og afbud er hentet fra den gamle prisside.",
+  "tillaeg": [
+    {
+      "navn": "Polterabend, fødselsdag eller event",
+      "detalje": "1,5 time · hos jer på Sjælland · transporttillæg",
+      "pris": "3.500 kr."
+    },
+    {
+      "navn": "Weekendtillæg",
+      "detalje": "",
+      "pris": "200 kr."
+    },
+    {
+      "navn": "Studerende",
+      "detalje": "Oplys det ved booking",
+      "pris": "10 % rabat pr. session"
+    }
+  ],
+  "moms": "Alle priser er inkl. moms.",
+  "betaling": "Du kan betale med MobilePay på 21 21 88 94 eller ved bankoverførsel inden sessionen: Nordea, reg.nr. 5501, kontonr. 8977351635.",
+  "afbud": "Da min virksomhed er sårbar over for aflysninger, kan din tid ændres eller aflyses senest 48 timer før via sms på 21 21 88 94. Aflyses der senere, koster det 500 kr., som du kan betale med MobilePay eller overførsel. Tak for din forståelse."
+}

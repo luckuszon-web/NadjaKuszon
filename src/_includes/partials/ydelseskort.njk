@@ -6,7 +6,7 @@
     <p class="service-meta">{{ s.minutes }} minutter · {{ s.priceDisplay }}</p>
     <p>{{ s.summary }}</p>
     <p class="service-note">Online via Zoom</p>
-    <a class="btn" href="/kontakt/">{{ s.cta }}</a>
+    <a class="btn" href="{{ site.bookingUrl }}">{{ s.cta }}</a>
   </article>
   {%- endfor %}
 </div>

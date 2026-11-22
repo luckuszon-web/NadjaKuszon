@@ -53,6 +53,24 @@
   "@graph": [
     {
       "@type": "Service",
+      "@id": "https://nadjakuszon.dk/astrologisk-terapi/#priser",
+      "name": "Personlig horoskoptydning (introduktionspris)",
+      "serviceType": "Astrologisk terapi",
+      "description": "Dit fødselshoroskop og dine aktuelle transitter koblet til det, du står i lige nu. Tag gerne en konkret situation eller et spørgsmål med.",
+      "provider": { "@type": "Person", "@id": "https://nadjakuszon.dk/#nadja", "name": "Nadja Kuszon" },
+      "areaServed": { "@type": "Country", "name": "Danmark" },
+      "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
+      "url": "https://nadjakuszon.dk/astrologisk-terapi/#priser",
+      "offers": {
+        "@type": "Offer",
+        "price": "600",
+        "priceCurrency": "DKK",
+        "url": "https://nadjakuszon.dk/kontakt/",
+        "description": "30 minutter"
+      }
+    },
+    {
+      "@type": "Service",
       "@id": "https://nadjakuszon.dk/astrologisk-terapi/#horoskoptydning",
       "name": "Astrologisk terapi – dybdegående horoskoptydning",
       "serviceType": "Astrologisk terapi",
@@ -236,11 +254,19 @@
     <div class="service-grid">
   <article class="service-card">
     <span class="service-ring" aria-hidden="true"></span>
+    <h3>Personlig horoskoptydning</h3>
+    <p class="service-meta">30 minutter · 600 kr.</p>
+    <p>Dit fødselshoroskop og dine aktuelle transitter koblet til det, du står i lige nu. Tag gerne en konkret situation eller et spørgsmål med.</p>
+    <p class="service-note">Online via Zoom</p>
+    <a class="btn" href="/kontakt/#book">Book din horoskoptydning</a>
+  </article>
+  <article class="service-card">
+    <span class="service-ring" aria-hidden="true"></span>
     <h3>Dybdegående horoskoptydning</h3>
     <p class="service-meta">90 minutter · 1.490 kr.</p>
     <p>Jeg analyserer dit fødselshoroskop før sessionen, og sammen forbinder vi de vigtigste tråde med dit virkelige liv.</p>
     <p class="service-note">Online via Zoom</p>
-    <a class="btn" href="/kontakt/">Book din horoskoptydning</a>
+    <a class="btn" href="/kontakt/#book">Book din horoskoptydning</a>
   </article>
   <article class="service-card">
     <span class="service-ring" aria-hidden="true"></span>
@@ -248,10 +274,11 @@
     <p class="service-meta">60 minutter · 990 kr.</p>
     <p>Efter din grundtydning går vi i dybden med et bestemt livsområde eller et mønster, der fylder hos dig.</p>
     <p class="service-note">Online via Zoom</p>
-    <a class="btn" href="/kontakt/">Book en opfølgende session</a>
+    <a class="btn" href="/kontakt/#book">Book en opfølgende session</a>
   </article>
 </div>
 
+    <p class="center small-link"><a class="text-link" href="/astrologisk-terapi/#priser">Se alle priser, betaling og afbud</a></p>
     <p class="center small-link"><a class="text-link" href="/foredrag-og-events/">Søger du et foredrag eller et arrangement? Se foredrag &amp; events</a></p>
   </div>
 </section>
