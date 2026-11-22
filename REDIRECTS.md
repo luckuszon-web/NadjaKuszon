@@ -51,10 +51,20 @@ Disse viderestillinger aktiveres først, hvis forslaget om at fjerne eller samme
 | `/inspiration-viden/fra-date-til-kaereste/` | `/inspiration-viden/haengeparti/` | Fjern: kønsstereotyp |
 | `/inspiration-viden/det-et-onsdag/` | `/inspiration-viden/forventninger/` | Fjern: dateret og ramt af spam |
 
-## Ved flytning til domænet
+## Ved flytning til domænet (GitHub Pages)
 
-1. Byg med `npm run build`. Output ligger i `_site/` og indeholder `_redirects`.
-2. Host på Netlify eller Cloudflare Pages (begge læser `_redirects` og laver rigtige 301'ere).
-3. Sæt `https://nadjakuszon.dk` som primært domæne, og lad hosten viderestille `http://` og `www.nadjakuszon.dk` dertil med 301. I dag svarer alle fire varianter 200 på den gamle server.
-4. Kør tjekket igen mod det rigtige domæne, fx `curl -sI https://nadjakuszon.dk/priser/`, som skal give `301` med `location: /astrologisk-terapi/`.
-5. Indsend `https://nadjakuszon.dk/sitemap.xml` i Google Search Console.
+Siden bliver på GitHub Pages. GitHub Pages kan ikke lave rigtige 301'ere, så de gamle URL'er får viderestillingssider (`<meta refresh>` + `canonical`), som Google behandler som en permanent flytning.
+
+1. **I repoet:** Kør `npm run build:domain` og commit/push `docs/`. Det bygger siden til `https://nadjakuszon.dk/` (uden `/NadjaKuszon/`, synlig for søgemaskiner) og lægger en `CNAME`-fil i `docs/`. Gør det først på flyttedagen, for derefter peger previewet på domænet.
+2. **På GitHub:** Under *Settings → Pages → Custom domain* skrives `nadjakuszon.dk` og trykkes Save.
+3. **Hos Gigahost (DNS):**
+   - Ret A-recorden for `nadjakuszon.dk` fra `178.72.21.224` til GitHubs fire adresser: `185.199.108.153`, `185.199.109.153`, `185.199.110.153` og `185.199.111.153` (fire A-records).
+   - Valgfrit (IPv6): fire AAAA-records `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153` og `2606:50c0:8003::153`.
+   - Slet wildcard-CNAME'en `*.nadjakuszon.dk`. GitHub fraråder wildcards, fordi de kan misbruges til at overtage underdomæner.
+   - Opret en CNAME `www.nadjakuszon.dk` → `luckuszon-web.github.io`.
+   - **Rør ikke** MX-, TXT- og SRV-records. De hører til mailen hos Gigahost.
+4. **HTTPS:** Når GitHub har godkendt domænet (minutter til et døgn), sættes flueben i *Enforce HTTPS*.
+5. **Test:** `https://nadjakuszon.dk`, `www.`, `http://` og fx `/priser/` skal alle ende på den nye side.
+6. **Efter en uge:** Bed TypoConsult om at lukke den gamle side, og fjern evt. `ip4:178.72.21.224` fra SPF-recorden.
+
+*Alternativ:* Flyttes siden senere til Netlify eller Cloudflare Pages, bruges `npm run build` (output i `_site/`) i stedet. Dér laver `_redirects` rigtige 301'ere.

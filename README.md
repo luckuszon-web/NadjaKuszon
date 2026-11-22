@@ -10,6 +10,7 @@ npm start            # udviklingsserver på http://localhost:8080
 npm run build        # produktion → _site/ (inkl. _redirects og sitemap.xml)
 npm run check        # tjekker _site mod acceptkriterierne (kør efter build)
 npm run build:pages  # GitHub Pages-preview → docs/ (noindex, sti /NadjaKuszon/)
+npm run build:domain # GitHub Pages på nadjakuszon.dk → docs/ (med CNAME) – se REDIRECTS.md
 ```
 
 ## Struktur

@@ -1,7 +1,7 @@
-// Viderestillingssider bygges kun til GitHub Pages-previewet (SITE_PREVIEW=1).
-// I produktion klarer _redirects-filen det med rigtige 301'ere.
+// Viderestillingssider til GitHub Pages (preview og domæne), som ikke kan lave 301.
+// Uden REDIRECT_PAGES/SITE_PREVIEW klarer _redirects-filen det med rigtige 301'ere.
 export default {
   eleventyComputed: {
-    permalink: (data) => (data.env.preview ? `${data.r.fra}index.html` : false),
+    permalink: (data) => (data.env.redirectPages ? `${data.r.fra}index.html` : false),
   },
 };

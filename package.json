@@ -6,7 +6,8 @@
     "build": "eleventy",
     "build:pages": "rm -rf docs && cross-env SITE_PREVIEW=1 eleventy --pathprefix=/NadjaKuszon/ --output=docs",
     "start": "eleventy --serve",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "build:domain": "rm -rf docs && cross-env REDIRECT_PAGES=1 eleventy --output=docs && echo nadjakuszon.dk > docs/CNAME"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.6",
