@@ -92,5 +92,8 @@
   </footer>
 
   <script src="/assets/js/main.js" defer></script>
+  {%- for js in scripts %}
+  <script src="/assets/js/{{ js }}" defer></script>
+  {%- endfor %}
 </body>
 </html>

@@ -1,0 +1,31 @@
+{
+  "_kommentar": "Hvor man finder sit fødselstidspunkt, efter borger.dk/samfund-og-rettigheder/arkiver--dokumentation-om-dig-selv/find-dit-foedselstidspunkt. Bruges i booking-boksen på kontaktsiden.",
+  "kilder": [
+    {
+      "id": "rigsarkivet",
+      "fra": 1900,
+      "til": 1985,
+      "tekst": "Søg gratis hos Rigsarkivet",
+      "url": "https://www.rigsarkivet.dk/ansoeg-bestil/oplysninger-om-dig-selv/foedselstidspunkt/"
+    },
+    {
+      "id": "sundhedsdata",
+      "fra": 1986,
+      "til": 2001,
+      "tekst": "Find det i dine sundhedsdata hos Sundhedsdatastyrelsen",
+      "url": "https://sundhedsdatastyrelsen.dk/borger/om-sundhedsdata/indsigt-i-dine-data"
+    },
+    {
+      "id": "cpr",
+      "fra": 2001,
+      "til": 9999,
+      "tekst": "Find det i CPR via borger.dk",
+      "url": "https://www.borger.dk/Handlingsside?selfserviceId=4b84f72e-c05c-4f5b-90e9-9be529c920ae&referringPageId=61cefcf5-771b-4c17-baf2-e3f5096007a2&type=DK"
+    }
+  ],
+  "tabt": {
+    "1986": "For fødsler i 1986 er fødselstidspunkterne desværre gået tabt i hele landet.",
+    "1987": "For fødsler i 1987 er fødselstidspunkterne desværre gået tabt for Fyn og dele af Sjælland.",
+    "1988": "For fødsler i 1988 er fødselstidspunkterne desværre gået tabt for Jylland og dele af Fyn."
+  }
+}

@@ -111,6 +111,192 @@
 
 <section class="section" id="book">
   <div class="container">
+    
+<div class="contact-card booking" id="booking"
+     data-endpoint="https://formsubmit.co/ajax/nadjakuszon@gmail.com"
+     data-phone="21 21 88 94">
+  <span class="service-ring" aria-hidden="true"></span>
+  <h2 class="booking-title">Book din horoskoptydning</h2>
+  <p class="booking-intro">Inden du booker, skal jeg bruge nogle oplysninger, så jeg kan beregne og forberede dit fødselshoroskop. Det tager under et minut.</p>
+
+  <noscript>
+    <p class="bk-note">Booking-boksen kræver JavaScript. Send mig i stedet en sms på <a href="sms:+4521218894">21 21 88 94</a> med den session, du ønsker, og din fødselsdato, dit fødselstidspunkt og dit fødested.</p>
+  </noscript>
+
+  <div class="bk-progress" hidden>
+    <p class="bk-progress-label" aria-live="polite" aria-atomic="true"></p>
+    <div class="bk-bar" aria-hidden="true"><div class="bk-bar-fill"></div></div>
+  </div>
+
+  <form class="bk-form" novalidate hidden>
+    <div class="bk-honey" aria-hidden="true">
+      <label for="bk-honey">Lad dette felt være tomt</label>
+      <input type="text" id="bk-honey" name="_honey" tabindex="-1" autocomplete="off">
+    </div>
+
+    <section class="bk-step" data-step="session" aria-labelledby="bk-q-session">
+      <h3 class="bk-question" id="bk-q-session" tabindex="-1">Hvilken session vil du booke?</h3>
+      <div class="bk-options" role="group" aria-labelledby="bk-q-session">
+        <button type="button" class="bk-option" data-field="session" data-value="Personlig horoskoptydning" data-detail="30 min. · 600 kr." aria-pressed="false">
+          <span class="bk-option-text">
+            <span class="bk-option-title">Personlig horoskoptydning</span>
+            <span class="bk-option-sub">30 minutter · 600 kr.</span>
+          </span>
+          <span class="bk-check" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="bk-option" data-field="session" data-value="Dybdegående horoskoptydning" data-detail="90 min. · 1.490 kr." aria-pressed="false">
+          <span class="bk-option-text">
+            <span class="bk-option-title">Dybdegående horoskoptydning</span>
+            <span class="bk-option-sub">90 minutter · 1.490 kr.</span>
+          </span>
+          <span class="bk-check" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="bk-option" data-field="session" data-value="Opfølgende horoskoptydning" data-detail="60 min. · 990 kr." aria-pressed="false">
+          <span class="bk-option-text">
+            <span class="bk-option-title">Opfølgende horoskoptydning</span>
+            <span class="bk-option-sub">60 minutter · 990 kr.</span>
+          </span>
+          <span class="bk-check" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="bk-step" data-step="kender" aria-labelledby="bk-q-kender" hidden>
+      <h3 class="bk-question" id="bk-q-kender" tabindex="-1">Kender du dit nøjagtige fødselstidspunkt og fødested?</h3>
+      <div class="bk-options bk-options-row" role="group" aria-labelledby="bk-q-kender">
+        <button type="button" class="bk-option" data-field="kender" data-value="ja" aria-pressed="false">
+          <span class="bk-option-text"><span class="bk-option-title">Ja</span></span>
+          <span class="bk-check" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="bk-option" data-field="kender" data-value="nej" aria-pressed="false">
+          <span class="bk-option-text"><span class="bk-option-title">Nej</span></span>
+          <span class="bk-check" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="bk-nav"><button type="button" class="btn btn-ghost bk-back">← Tilbage</button></div>
+    </section>
+
+    <section class="bk-step" data-step="aar" aria-labelledby="bk-q-aar" hidden>
+      <h3 class="bk-question" id="bk-q-aar" tabindex="-1"><label for="bk-aar">Hvilket år er du født?</label></h3>
+      <input class="bk-input bk-input-short" type="text" id="bk-aar" name="aar" inputmode="numeric" autocomplete="bday-year" maxlength="4" pattern="[0-9]{4}" placeholder="fx 1985" aria-describedby="bk-aar-fejl">
+      <p class="bk-error" id="bk-aar-fejl" hidden></p>
+      <div class="bk-nav">
+        <button type="button" class="btn btn-ghost bk-back">← Tilbage</button>
+        <button type="button" class="btn bk-next">Videre</button>
+      </div>
+    </section>
+
+    <section class="bk-step" data-step="nej" aria-labelledby="bk-q-nej" hidden>
+      <h3 class="bk-question" id="bk-q-nej" tabindex="-1">Dit fødselstidspunkt skal være præcist</h3>
+      <p>Før jeg kan beregne dit fødselshoroskop, skal jeg kende dit fødselstidspunkt så præcist som muligt. Du kan gratis få det oplyst. Ud fra dit fødselsår kan du finde det her:</p>
+      <ul class="bk-sources">
+        <li data-fra="1900" data-til="1985" hidden>
+          <a class="btn btn-ghost bk-source" href="https://www.rigsarkivet.dk/ansoeg-bestil/oplysninger-om-dig-selv/foedselstidspunkt/" target="_blank" rel="noopener">Søg gratis hos Rigsarkivet<span class="visually-hidden"> (åbner i en ny fane)</span></a>
+        </li>
+        <li data-fra="1986" data-til="2001" hidden>
+          <a class="btn btn-ghost bk-source" href="https://sundhedsdatastyrelsen.dk/borger/om-sundhedsdata/indsigt-i-dine-data" target="_blank" rel="noopener">Find det i dine sundhedsdata hos Sundhedsdatastyrelsen<span class="visually-hidden"> (åbner i en ny fane)</span></a>
+        </li>
+        <li data-fra="2001" data-til="9999" hidden>
+          <a class="btn btn-ghost bk-source" href="https://www.borger.dk/Handlingsside?selfserviceId=4b84f72e-c05c-4f5b-90e9-9be529c920ae&amp;referringPageId=61cefcf5-771b-4c17-baf2-e3f5096007a2&amp;type=DK" target="_blank" rel="noopener">Find det i CPR via borger.dk<span class="visually-hidden"> (åbner i en ny fane)</span></a>
+        </li>
+      </ul>
+      <p class="bk-note" data-tabt="1986" hidden>For fødsler i 1986 er fødselstidspunkterne desværre gået tabt i hele landet.</p>
+      <p class="bk-note" data-tabt="1987" hidden>For fødsler i 1987 er fødselstidspunkterne desværre gået tabt for Fyn og dele af Sjælland.</p>
+      <p class="bk-note" data-tabt="1988" hidden>For fødsler i 1988 er fødselstidspunkterne desværre gået tabt for Jylland og dele af Fyn.</p>
+      <div class="bk-nav bk-nav-stack">
+        <button type="button" class="btn bk-has-info">Jeg har mine oplysninger nu</button>
+        <button type="button" class="btn btn-ghost bk-back">← Tilbage</button>
+      </div>
+      <p class="bk-note">Du er også velkommen til at sende en sms til mig på <a href="sms:+4521218894">21 21 88 94</a>, så hjælper jeg dig videre.</p>
+    </section>
+
+    <section class="bk-step" data-step="dato" aria-labelledby="bk-q-dato" hidden>
+      <h3 class="bk-question" id="bk-q-dato" tabindex="-1"><label for="bk-dato">Hvornår er du født?</label></h3>
+      <input class="bk-input bk-input-short" type="date" id="bk-dato" name="dato" min="1900-01-01" autocomplete="bday" aria-describedby="bk-dato-fejl">
+      <p class="bk-error" id="bk-dato-fejl" hidden></p>
+      <div class="bk-nav">
+        <button type="button" class="btn btn-ghost bk-back">← Tilbage</button>
+        <button type="button" class="btn bk-next">Videre</button>
+      </div>
+    </section>
+
+    <section class="bk-step" data-step="tid" aria-labelledby="bk-q-tid" hidden>
+      <h3 class="bk-question" id="bk-q-tid" tabindex="-1"><label for="bk-tid">Hvad er dit nøjagtige fødselstidspunkt?</label></h3>
+      <input class="bk-input bk-input-short" type="time" id="bk-tid" name="tid" aria-describedby="bk-tid-hint bk-tid-fejl">
+      <p class="bk-hint" id="bk-tid-hint">Timer og minutter (tt:mm), fx 14:35.</p>
+      <p class="bk-error" id="bk-tid-fejl" hidden></p>
+      <div class="bk-nav">
+        <button type="button" class="btn btn-ghost bk-back">← Tilbage</button>
+        <button type="button" class="btn bk-next">Videre</button>
+      </div>
+    </section>
+
+    <section class="bk-step" data-step="sted" aria-labelledby="bk-q-sted" hidden>
+      <h3 class="bk-question" id="bk-q-sted" tabindex="-1"><label for="bk-sted">Hvor er du født?</label></h3>
+      <input class="bk-input" type="text" id="bk-sted" name="sted" autocomplete="off" placeholder="fx Odense, Danmark" aria-describedby="bk-sted-hint bk-sted-fejl">
+      <p class="bk-hint" id="bk-sted-hint">By og land.</p>
+      <p class="bk-error" id="bk-sted-fejl" hidden></p>
+      <div class="bk-nav">
+        <button type="button" class="btn btn-ghost bk-back">← Tilbage</button>
+        <button type="button" class="btn bk-next">Videre</button>
+      </div>
+    </section>
+
+    <section class="bk-step" data-step="fokus" aria-labelledby="bk-q-fokus" hidden>
+      <h3 class="bk-question" id="bk-q-fokus" tabindex="-1"><label for="bk-fokus">Er der noget særligt, du gerne vil have fokus på?</label></h3>
+      <textarea class="bk-input" id="bk-fokus" name="fokus" rows="4" aria-describedby="bk-fokus-hint"></textarea>
+      <p class="bk-hint" id="bk-fokus-hint">Valgfrit. Fx en situation, et spørgsmål eller et livsområde.</p>
+      <div class="bk-nav">
+        <button type="button" class="btn btn-ghost bk-back">← Tilbage</button>
+        <span class="bk-nav-right">
+          <button type="button" class="btn btn-ghost bk-skip">Spring over</button>
+          <button type="button" class="btn bk-next">Videre</button>
+        </span>
+      </div>
+    </section>
+
+    <section class="bk-step" data-step="kontakt" aria-labelledby="bk-q-kontakt" hidden>
+      <h3 class="bk-question" id="bk-q-kontakt" tabindex="-1">Dine kontaktoplysninger</h3>
+      <div class="bk-fields">
+        <div class="bk-field">
+          <label for="bk-navn">Navn</label>
+          <input class="bk-input" type="text" id="bk-navn" name="navn" autocomplete="name" required aria-describedby="bk-navn-fejl">
+          <p class="bk-error" id="bk-navn-fejl" hidden></p>
+        </div>
+        <div class="bk-field">
+          <label for="bk-telefon">Telefon</label>
+          <input class="bk-input" type="tel" id="bk-telefon" name="telefon" autocomplete="tel" inputmode="tel" required aria-describedby="bk-telefon-fejl">
+          <p class="bk-error" id="bk-telefon-fejl" hidden></p>
+        </div>
+        <div class="bk-field">
+          <label for="bk-email">E-mail <span class="bk-optional">(valgfri)</span></label>
+          <input class="bk-input" type="email" id="bk-email" name="email" autocomplete="email" aria-describedby="bk-email-fejl">
+          <p class="bk-error" id="bk-email-fejl" hidden></p>
+        </div>
+      </div>
+      <p class="bk-note">Dine oplysninger bruges kun til at forberede din horoskoptydning.</p>
+      <div class="bk-nav">
+        <button type="button" class="btn btn-ghost bk-back">← Tilbage</button>
+        <button type="submit" class="btn bk-submit">Send min booking</button>
+      </div>
+    </section>
+
+    <section class="bk-step" data-step="tak" aria-labelledby="bk-q-tak" hidden>
+      <h3 class="bk-question" id="bk-q-tak" tabindex="-1">Tak, <span class="bk-fornavn"></span>!</h3>
+      <p>Jeg har modtaget dine oplysninger og kontakter dig hurtigst muligt for at aftale en tid.</p>
+      <h4 class="bk-summary-title">Det har du sendt</h4>
+      <dl class="bk-summary"></dl>
+    </section>
+
+    <section class="bk-step" data-step="fejl" aria-labelledby="bk-q-fejl" hidden>
+      <h3 class="bk-question" id="bk-q-fejl" tabindex="-1">Noget gik galt. Send mig i stedet en sms på <a href="sms:+4521218894">21 21 88 94</a></h3>
+      <p>Dine svar står herunder, så du kan skrive dem i din sms.</p>
+      <dl class="bk-summary"></dl>
+      <div class="bk-nav"><button type="button" class="btn btn-ghost bk-retry">← Prøv at sende igen</button></div>
+    </section>
+  </form>
+</div>
+
     <div class="contact-grid">
       <div class="contact-card">
         <span class="service-ring" aria-hidden="true"></span>
@@ -133,7 +319,6 @@
 <section class="section section-tint">
   <div class="container narrow prose">
     <h2>Når du booker en horoskoptydning</h2>
-    <p>For at jeg kan beregne dit fødselshoroskop, skal jeg bruge din fødselsdato, dit præcise fødselstidspunkt og dit fødested.</p>
     <p>Alle sessioner foregår online via Zoom.</p>
     <ul class="ring-list">
       <li><a href="/priser/">Personlig horoskoptydning</a> – 30 minutter · 600 kr.</li>
@@ -179,5 +364,6 @@
   </footer>
 
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/booking.js" defer></script>
 </body>
 </html>

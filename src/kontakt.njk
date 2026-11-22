@@ -1,4 +1,5 @@
 ---
+scripts: ["booking.js"]
 layout: layouts/base.njk
 title: Kontakt
 metaTitle: Book tid eller kontakt Nadja Kuszon
@@ -16,6 +17,7 @@ schema: ["person"]
 
 <section class="section" id="book">
   <div class="container">
+    {% include "partials/booking.njk" %}
     <div class="contact-grid">
       <div class="contact-card">
         <span class="service-ring" aria-hidden="true"></span>
@@ -38,7 +40,6 @@ schema: ["person"]
 <section class="section section-tint">
   <div class="container narrow prose">
     <h2>Når du booker en horoskoptydning</h2>
-    <p>For at jeg kan beregne dit fødselshoroskop, skal jeg bruge din fødselsdato, dit præcise fødselstidspunkt og dit fødested.</p>
     <p>Alle sessioner foregår online via Zoom.</p>
     <ul class="ring-list">
       {%- for s in services %}
