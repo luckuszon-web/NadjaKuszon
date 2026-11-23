@@ -1,7 +1,7 @@
 {#- Trin-for-trin booking. Trinene ligger i HTML'en, og booking.js viser ét ad gangen.
     Ydelser hentes fra services.json og links fra foedselstid.json, så de kun står ét sted. #}
 <div class="contact-card booking" id="booking"
-     data-endpoint="https://formsubmit.co/ajax/{{ site.email }}"
+     data-endpoint="{{ site.formEndpoint }}"
      data-phone="{{ site.phoneDisplay }}">
   <span class="service-ring" aria-hidden="true"></span>
   <h2 class="booking-title">Book din horoskoptydning</h2>
@@ -20,7 +20,7 @@
     {#- Honeypot mod spam: skjult for mennesker, udfyldes kun af robotter #}
     <div class="bk-honey" aria-hidden="true">
       <label for="bk-honey">Lad dette felt være tomt</label>
-      <input type="text" id="bk-honey" name="_honey" tabindex="-1" autocomplete="off">
+      <input type="text" id="bk-honey" name="_gotcha" tabindex="-1" autocomplete="off">
     </div>
 
     <section class="bk-step" data-step="session" aria-labelledby="bk-q-session">

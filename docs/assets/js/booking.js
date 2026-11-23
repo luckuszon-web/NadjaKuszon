@@ -210,8 +210,7 @@
 
     const payload = {
       _subject: `Ny booking: ${answers.session} – ${answers.navn}`,
-      _template: "table",
-      _honey: form.elements._honey.value,
+      _gotcha: form.elements._gotcha.value,
       Session: `${answers.session} (${answers.sessionDetail})`,
       Fødselsdato: formatDate(answers.dato),
       Fødselstidspunkt: answers.tid,
@@ -219,9 +218,9 @@
       Fokus: answers.fokus || "–",
       Navn: answers.navn,
       Telefon: answers.telefon,
-      email: answers.email || "–",
     };
-    if (answers.email) payload._replyto = answers.email;
+    // Formspree bruger feltet "email" som svar-adresse og kræver, at det er gyldigt – udelades, hvis tomt
+    if (answers.email) payload.email = answers.email;
 
     let sent = false;
     try {
@@ -231,7 +230,8 @@
         body: JSON.stringify(payload),
       });
       const data = await res.json().catch(() => ({}));
-      sent = res.ok && String(data.success) === "true";
+      // Formspree svarer {"ok": true} ved succes og {"errors": [...]} ved fejl
+      sent = res.ok && data.ok !== false && !data.errors;
     } catch {
       sent = false;
     }
