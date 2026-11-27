@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nadja Kuszon – Astrolog &amp; personlig horoskoptydning online</title>
-  <meta name="description" content="Personlig horoskoptydning online med Nadja Kuszon. Dit fødselshoroskop og dine aktuelle transitter belyser det, du står i lige nu. 30 min. på Zoom.">
+  <meta name="description" content="Personlig horoskoptydning online med Nadja Kuszon. Få indsigt i din personlighed, dit potentiale, dit hjerte eller dit år. Fra 600 kr. på Zoom.">
   <link rel="canonical" href="https://nadjakuszon.dk/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="da_DK">
   <meta property="og:site_name" content="Nadja Kuszon">
   <meta property="og:title" content="Nadja Kuszon – Astrolog &amp; personlig horoskoptydning online">
-  <meta property="og:description" content="Personlig horoskoptydning online med Nadja Kuszon. Dit fødselshoroskop og dine aktuelle transitter belyser det, du står i lige nu. 30 min. på Zoom.">
+  <meta property="og:description" content="Personlig horoskoptydning online med Nadja Kuszon. Få indsigt i din personlighed, dit potentiale, dit hjerte eller dit år. Fra 600 kr. på Zoom.">
   <meta property="og:url" content="https://nadjakuszon.dk/">
   <meta property="og:image" content="https://nadjakuszon.dk/assets/img/og-nadja-kuszon.jpg">
   <meta property="og:image:width" content="1200">
@@ -32,7 +32,7 @@
   "@id": "https://nadjakuszon.dk/#nadja",
   "name": "Nadja Kuszon",
   "jobTitle": "Astrolog",
-  "description": "Dybdegående horoskoptydning online. Baggrund som sexolog og parterapeut siden 2013.",
+  "description": "Personlige horoskoptydninger online. Baggrund som sexolog og parterapeut siden 2013.",
   "url": "https://nadjakuszon.dk/",
   "image": "https://nadjakuszon.dk/assets/img/nadja-portraet.jpg",
   "email": "mailto:nadjakuszon@gmail.com",
@@ -53,56 +53,92 @@
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://nadjakuszon.dk/priser/#service",
-      "name": "Personlig horoskoptydning (introduktionspris)",
+      "@id": "https://nadjakuszon.dk/astrologisk-terapi/#kend-dit-horoskop#service",
+      "name": "Kend dit horoskop",
       "serviceType": "Horoskoptydning",
-      "description": "Dit fødselshoroskop og dine aktuelle transitter koblet til det, du står i lige nu. Tag gerne en konkret situation eller et spørgsmål med.",
+      "description": "En introduktion til dit personlige fødselshoroskop",
       "provider": { "@type": "Person", "@id": "https://nadjakuszon.dk/#nadja", "name": "Nadja Kuszon" },
       "areaServed": { "@type": "Country", "name": "Danmark" },
       "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
-      "url": "https://nadjakuszon.dk/priser/",
+      "url": "https://nadjakuszon.dk/astrologisk-terapi/#kend-dit-horoskop",
       "offers": {
         "@type": "Offer",
         "price": "600",
         "priceCurrency": "DKK",
-        "url": "https://nadjakuszon.dk/kontakt/",
-        "description": "30 minutter"
+        "url": "https://nadjakuszon.dk/kontakt/?ydelse=kend-dit-horoskop",
+        "description": "60 minutter · Introduktionspris"
       }
     },
     {
       "@type": "Service",
-      "@id": "https://nadjakuszon.dk/astrologisk-terapi/#horoskoptydning#service",
-      "name": "Dybdegående horoskoptydning",
+      "@id": "https://nadjakuszon.dk/astrologisk-terapi/#kend-dit-potentiale#service",
+      "name": "Kend dit potentiale",
       "serviceType": "Horoskoptydning",
-      "description": "Jeg analyserer dit fødselshoroskop før sessionen, og sammen forbinder vi de vigtigste tråde med dit virkelige liv.",
+      "description": "Personlighed, talenter og livsretning",
       "provider": { "@type": "Person", "@id": "https://nadjakuszon.dk/#nadja", "name": "Nadja Kuszon" },
       "areaServed": { "@type": "Country", "name": "Danmark" },
       "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
-      "url": "https://nadjakuszon.dk/astrologisk-terapi/#horoskoptydning",
+      "url": "https://nadjakuszon.dk/astrologisk-terapi/#kend-dit-potentiale",
       "offers": {
         "@type": "Offer",
-        "price": "1490",
+        "price": "600",
         "priceCurrency": "DKK",
-        "url": "https://nadjakuszon.dk/kontakt/",
-        "description": "90 minutter"
+        "url": "https://nadjakuszon.dk/kontakt/?ydelse=kend-dit-potentiale",
+        "description": "60 minutter · Introduktionspris"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://nadjakuszon.dk/astrologisk-terapi/#kend-dit-hjerte#service",
+      "name": "Kend dit hjerte",
+      "serviceType": "Horoskoptydning",
+      "description": "Kærlighed, relationer og følelsesmæssige mønstre",
+      "provider": { "@type": "Person", "@id": "https://nadjakuszon.dk/#nadja", "name": "Nadja Kuszon" },
+      "areaServed": { "@type": "Country", "name": "Danmark" },
+      "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
+      "url": "https://nadjakuszon.dk/astrologisk-terapi/#kend-dit-hjerte",
+      "offers": {
+        "@type": "Offer",
+        "price": "600",
+        "priceCurrency": "DKK",
+        "url": "https://nadjakuszon.dk/kontakt/?ydelse=kend-dit-hjerte",
+        "description": "60 minutter · Introduktionspris"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://nadjakuszon.dk/astrologisk-terapi/#kend-dit-aar#service",
+      "name": "Kend dit år",
+      "serviceType": "Horoskoptydning",
+      "description": "Hvilke astrologiske energier er på spil i dit liv de næste 12 måneder?",
+      "provider": { "@type": "Person", "@id": "https://nadjakuszon.dk/#nadja", "name": "Nadja Kuszon" },
+      "areaServed": { "@type": "Country", "name": "Danmark" },
+      "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
+      "url": "https://nadjakuszon.dk/astrologisk-terapi/#kend-dit-aar",
+      "offers": {
+        "@type": "Offer",
+        "price": "995",
+        "priceCurrency": "DKK",
+        "url": "https://nadjakuszon.dk/kontakt/?ydelse=kend-dit-aar",
+        "description": "90 minutter · Introduktionspris"
       }
     },
     {
       "@type": "Service",
       "@id": "https://nadjakuszon.dk/astrologisk-terapi/#opfoelgning#service",
-      "name": "Opfølgende horoskoptydning",
+      "name": "Opfølgende astrologisk tydning",
       "serviceType": "Horoskoptydning",
-      "description": "Efter din grundtydning går vi i dybden med et bestemt livsområde eller et mønster, der fylder hos dig.",
+      "description": "Når du ønsker at gå et spadestik dybere",
       "provider": { "@type": "Person", "@id": "https://nadjakuszon.dk/#nadja", "name": "Nadja Kuszon" },
       "areaServed": { "@type": "Country", "name": "Danmark" },
       "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
       "url": "https://nadjakuszon.dk/astrologisk-terapi/#opfoelgning",
       "offers": {
         "@type": "Offer",
-        "price": "990",
+        "price": "600",
         "priceCurrency": "DKK",
-        "url": "https://nadjakuszon.dk/kontakt/",
-        "description": "60 minutter"
+        "url": "https://nadjakuszon.dk/kontakt/?ydelse=opfoelgning",
+        "description": "30 minutter · Fast pris"
       }
     }
   ]
@@ -147,8 +183,7 @@
       <h1>Personlig horoskoptydning</h1>
       <p class="hero-lead">Står du et sted i livet, hvor noget har ændret sig, og du endnu ikke ved, hvilken vej du skal gå?</p>
       <p>Et brud, en krise eller et valg, du har udskudt længe, kan få dig til at spørge: Hvorfor rammer det mig så hårdt? Hvad har jeg brug for lige nu? Og hvordan kommer jeg videre?</p>
-      <p class="offer-facts">30 minutter på Zoom · 600 kr. i introduktionspris</p>
-      <p class="service-note">Forberedelsen er inkluderet: Inden vi mødes, har jeg beregnet og analyseret dit fødselshoroskop, så de 30 minutter går til samtalen om dig.</p>
+      <p class="offer-facts">Introduktionspriser fra 600 kr. · Zoom · Personlig forberedelse inkluderet</p>
       <a class="btn btn-large" href="/kontakt/#book">Book din horoskoptydning</a>
     </div>
     <div class="hero-portrait">
@@ -185,9 +220,8 @@
     <p class="lead">Jeg bruger astrologi til at skabe bevidsthed om det, du oplever i dit eget liv. Dit fødselshoroskop er vores udgangspunkt for at se på dine mønstre, behov og styrker. Med dine aktuelle transitter ser vi også på, hvilke temaer der træder særligt frem lige nu. Du kan tage en konkret situation eller et spørgsmål med, så vi kan koble tydningen til det, du faktisk står i.</p>
     <p>Nogle gange opdager vi først gennem smerte, hvad vi har brug for, hvor vores grænser går, eller hvad vi længes efter at gøre anderledes. I samtalen undersøger vi, hvilke styrker du allerede kan trække på, hvilke muligheder du måske har overset, og hvad der kunne være dit næste skridt på en vej, der føles rigtig for dig.</p>
     <p>Min baggrund som sexolog og parterapeut hjælper mig med at stille spørgsmål og give plads til det, der kan være svært at sætte ord på. Du kan også booke, hvis du bare er nysgerrig på dit horoskop og gerne vil lære dig selv bedre at kende.</p>
-    <p class="offer-facts">30 minutter på Zoom · 600 kr. i introduktionspris</p>
-    <p class="service-note">Forberedelsen er inkluderet: Inden vi mødes, har jeg beregnet og analyseret dit fødselshoroskop, så de 30 minutter går til samtalen om dig.</p>
-    <a class="btn" href="/kontakt/#book">Book din horoskoptydning</a>
+    <p class="offer-facts">Introduktionspriser fra 600 kr. · Zoom · Personlig forberedelse inkluderet</p>
+    <a class="btn" href="#ydelser-titel">Se de fire tydninger</a>
   </div>
 </section>
 
@@ -252,33 +286,100 @@
 
 <section class="section section-tint" aria-labelledby="ydelser-titel">
   <div class="container">
-    <h2 class="section-title center" id="ydelser-titel">Book en session</h2>
-    <p class="center section-intro">Alle sessioner foregår online via Zoom.</p>
-    <div class="service-grid">
-  <article class="service-card">
-    <span class="service-ring" aria-hidden="true"></span>
-    <h3>Personlig horoskoptydning</h3>
-    <p class="service-meta">30 minutter · 600 kr.</p>
-    <p>Dit fødselshoroskop og dine aktuelle transitter koblet til det, du står i lige nu. Tag gerne en konkret situation eller et spørgsmål med.</p>
-    <p class="service-note">Online via Zoom</p>
-    <a class="btn" href="/kontakt/#book">Book din horoskoptydning</a>
-  </article>
-  <article class="service-card">
-    <span class="service-ring" aria-hidden="true"></span>
-    <h3>Dybdegående horoskoptydning</h3>
-    <p class="service-meta">90 minutter · 1.490 kr.</p>
-    <p>Jeg analyserer dit fødselshoroskop før sessionen, og sammen forbinder vi de vigtigste tråde med dit virkelige liv.</p>
-    <p class="service-note">Online via Zoom</p>
-    <a class="btn" href="/kontakt/#book">Book din horoskoptydning</a>
-  </article>
-  <article class="service-card">
-    <span class="service-ring" aria-hidden="true"></span>
-    <h3>Opfølgende horoskoptydning</h3>
-    <p class="service-meta">60 minutter · 990 kr.</p>
-    <p>Efter din grundtydning går vi i dybden med et bestemt livsområde eller et mønster, der fylder hos dig.</p>
-    <p class="service-note">Online via Zoom</p>
-    <a class="btn" href="/kontakt/#book">Book en opfølgende session</a>
-  </article>
+    <h2 class="section-title center" id="ydelser-titel">Vælg din horoskoptydning</h2>
+    <p class="center section-intro">Vælg ud fra det område af dit liv, du ønsker indsigt i. Alle tydninger foregår på Zoom.</p>
+    
+    
+<ul class="pakke-grid">
+  <li class="pakke">
+    <img class="pakke-billede" src="/assets/img/ydelser/kend-dit-horoskop.svg" alt="Illustration af et horoskophjul med tolv huse, sol, måne og ascendant" width="600" height="450" loading="lazy">
+    <div class="pakke-body">
+      <h3 class="pakke-navn">Kend dit horoskop</h3>
+      <p class="pakke-sub">En introduktion til dit personlige fødselshoroskop</p>
+      <p class="pakke-forhvem">For dig, der er nysgerrig på, hvem du er, hvad der driver dig, og hvilke styrker og udfordringer der ligger i dit horoskop.</p>
+      <div class="pakke-pris">
+        <p class="pakke-pris-label">Introduktionspris</p>
+        <p class="pakke-pris-belob">600 kr.</p>
+        <p class="pakke-pris-fremtid">Forventet fremtidig pris: 1.190 kr.</p>
+      </div>
+      <p class="pakke-detaljer">60 minutter · Zoom · Personlig forberedelse inkluderet</p>
+      <div class="pakke-knapper">
+        <a class="btn" href="/kontakt/?ydelse=kend-dit-horoskop#book">Book Kend dit horoskop</a>
+        <a class="text-link" href="/astrologisk-terapi/#kend-dit-horoskop">Læs mere<span class="visually-hidden"> om Kend dit horoskop</span></a>
+      </div>
+    </div>
+  </li>
+  <li class="pakke">
+    <img class="pakke-billede" src="/assets/img/ydelser/kend-dit-potentiale.svg" alt="Illustration af en opgående sol over horisonten med en vej og en kompasstjerne" width="600" height="450" loading="lazy">
+    <div class="pakke-body">
+      <h3 class="pakke-navn">Kend dit potentiale</h3>
+      <p class="pakke-sub">Personlighed, talenter og livsretning</p>
+      <p class="pakke-forhvem">For dig, der ønsker at forstå dine muligheder, opdage uudnyttede ressourcer eller finde en ny retning i dit liv.</p>
+      <div class="pakke-pris">
+        <p class="pakke-pris-label">Introduktionspris</p>
+        <p class="pakke-pris-belob">600 kr.</p>
+        <p class="pakke-pris-fremtid">Forventet fremtidig pris: 1.190 kr.</p>
+      </div>
+      <p class="pakke-detaljer">60 minutter · Zoom · Personlig forberedelse inkluderet</p>
+      <div class="pakke-knapper">
+        <a class="btn" href="/kontakt/?ydelse=kend-dit-potentiale#book">Book Kend dit potentiale</a>
+        <a class="text-link" href="/astrologisk-terapi/#kend-dit-potentiale">Læs mere<span class="visually-hidden"> om Kend dit potentiale</span></a>
+      </div>
+    </div>
+  </li>
+  <li class="pakke">
+    <img class="pakke-billede" src="/assets/img/ydelser/kend-dit-hjerte.svg" alt="Illustration af et hjerte mellem Venus- og Mars-symbolerne under en halvmåne" width="600" height="450" loading="lazy">
+    <div class="pakke-body">
+      <h3 class="pakke-navn">Kend dit hjerte</h3>
+      <p class="pakke-sub">Kærlighed, relationer og følelsesmæssige mønstre</p>
+      <p class="pakke-forhvem">For dig, der ønsker en dybere forståelse af dit kærlighedsliv, dine relationer og de mønstre, du gentager i mødet med andre.</p>
+      <div class="pakke-pris">
+        <p class="pakke-pris-label">Introduktionspris</p>
+        <p class="pakke-pris-belob">600 kr.</p>
+        <p class="pakke-pris-fremtid">Forventet fremtidig pris: 1.190 kr.</p>
+      </div>
+      <p class="pakke-detaljer">60 minutter · Zoom · Personlig forberedelse inkluderet</p>
+      <div class="pakke-knapper">
+        <a class="btn" href="/kontakt/?ydelse=kend-dit-hjerte#book">Book Kend dit hjerte</a>
+        <a class="text-link" href="/astrologisk-terapi/#kend-dit-hjerte">Læs mere<span class="visually-hidden"> om Kend dit hjerte</span></a>
+      </div>
+    </div>
+  </li>
+  <li class="pakke">
+    <img class="pakke-billede" src="/assets/img/ydelser/kend-dit-aar.svg" alt="Illustration af tolv månefaser i en bane om solen" width="600" height="450" loading="lazy">
+    <div class="pakke-body">
+      <h3 class="pakke-navn">Kend dit år</h3>
+      <p class="pakke-sub">Hvilke astrologiske energier er på spil i dit liv de næste 12 måneder?</p>
+      <p class="pakke-forhvem">For dig, der står over for forandringer, mærker nye muligheder eller ønsker at forstå, hvilken livsfase du bevæger dig igennem.</p>
+      <div class="pakke-pris">
+        <p class="pakke-pris-label">Introduktionspris</p>
+        <p class="pakke-pris-belob">995 kr.</p>
+        <p class="pakke-pris-fremtid">Forventet fremtidig pris: 1.990 kr.</p>
+      </div>
+      <p class="pakke-detaljer">90 minutter · Zoom · Grundig astrologisk forberedelse inkluderet</p>
+      <div class="pakke-knapper">
+        <a class="btn" href="/kontakt/?ydelse=kend-dit-aar#book">Book Kend dit år</a>
+        <a class="text-link" href="/astrologisk-terapi/#kend-dit-aar">Læs mere<span class="visually-hidden"> om Kend dit år</span></a>
+      </div>
+    </div>
+  </li>
+</ul>
+<div class="pakke-opfoelgning">
+  <span class="service-ring" aria-hidden="true"></span>
+  <div class="pakke-opfoelgning-tekst">
+    <h3 class="pakke-navn">Opfølgende astrologisk tydning</h3>
+    <p class="pakke-sub">Når du ønsker at gå et spadestik dybere</p>
+    <p class="pakke-forhvem">For dig, der tidligere har fået en personlig horoskoptydning hos mig og ønsker at arbejde videre med et bestemt tema.</p>
+  </div>
+  <div class="pakke-opfoelgning-side">
+    <div class="pakke-pris">
+      <p class="pakke-pris-label">Fast pris</p>
+      <p class="pakke-pris-belob">600 kr.</p>
+    </div>
+    <p class="pakke-detaljer">30 minutter · Zoom</p>
+    <p class="pakke-note">Denne ydelse er kun for tidligere klienter.</p>
+    <a class="btn btn-ghost" href="/kontakt/?ydelse=opfoelgning#book">Book opfølgende tydning</a>
+  </div>
 </div>
 
     <p class="center small-link"><a class="text-link" href="/priser/">Se alle priser, betaling og afbud</a></p>
@@ -323,7 +424,7 @@
     <div class="container footer-grid">
       <div>
         <p class="footer-name">Nadja Kuszon</p>
-        <p>Dybdegående horoskoptydning.<br>Online via Zoom.</p>
+        <p>Personlige horoskoptydninger.<br>Online via Zoom.</p>
       </div>
       <div>
         <h2 class="footer-heading">Kontakt</h2>

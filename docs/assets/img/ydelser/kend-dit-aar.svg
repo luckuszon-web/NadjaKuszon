@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="t">
+<title id="t">Tolv månefaser i en bane om solen som et år</title>
+<defs>
+  <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+    <stop offset="0" stop-color="#F8EEDF"/><stop offset=".6" stop-color="#F0DDC3"/><stop offset="1" stop-color="#E5CBA6"/>
+  </radialGradient>
+  <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="450">
+    <stop offset="0" stop-color="#C9A465"/><stop offset=".5" stop-color="#A2814A"/><stop offset="1" stop-color="#B8955A"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#FFF8EA" stop-opacity=".9"/><stop offset="1" stop-color="#FFF8EA" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="600" height="450" fill="url(#bg)"/>
+<g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+<path d="M60,50.4 C61.44,58.56 61.44,58.56 69.6,60 C61.44,61.44 61.44,61.44 60,69.6 C58.56,61.44 58.56,61.44 50.4,60 C58.56,58.56 58.56,58.56 60,50.4Z" fill="url(#gold)" stroke="none"/>
+<path d="M545,49.6 C546.56,58.44 546.56,58.44 555.4,60 C546.56,61.56 546.56,61.56 545,70.4 C543.44,61.56 543.44,61.56 534.6,60 C543.44,58.44 543.44,58.44 545,49.6Z" fill="url(#gold)" stroke="none"/>
+<path d="M550,387 C551.2,393.8 551.2,393.8 558,395 C551.2,396.2 551.2,396.2 550,403 C548.8,396.2 548.8,396.2 542,395 C548.8,393.8 548.8,393.8 550,387Z" fill="url(#gold)" stroke="none"/>
+<path d="M55,385.4 C56.44,393.56 56.44,393.56 64.6,395 C56.44,396.44 56.44,396.44 55,404.6 C53.56,396.44 53.56,396.44 45.4,395 C53.56,393.56 53.56,393.56 55,385.4Z" fill="url(#gold)" stroke="none"/>
+<path d="M300,19.4 C300.84,24.16 300.84,24.16 305.6,25 C300.84,25.84 300.84,25.84 300,30.6 C299.16,25.84 299.16,25.84 294.4,25 C299.16,24.16 299.16,24.16 300,19.4Z" fill="url(#gold)" stroke="none"/>
+<circle cx="261" cy="170" r="0.9" fill="url(#gold)" stroke="none"/>
+<circle cx="425" cy="260" r="0.9" fill="url(#gold)" stroke="none"/>
+<circle cx="112" cy="49" r="0.9" fill="url(#gold)" stroke="none"/>
+<circle cx="431" cy="296" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="80" cy="128" r="1.5" fill="url(#gold)" stroke="none"/>
+<circle cx="569" cy="199" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="196" cy="69" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="239" cy="28" r="1.5" fill="url(#gold)" stroke="none"/>
+<circle cx="286" cy="424" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="218" cy="99" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="316" cy="336" r="1.5" fill="url(#gold)" stroke="none"/>
+<circle cx="401" cy="59" r="1.5" fill="url(#gold)" stroke="none"/>
+<circle cx="365" cy="358" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="538" cy="142" r="0.9" fill="url(#gold)" stroke="none"/>
+<circle cx="273" cy="257" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="111" cy="433" r="1.5" fill="url(#gold)" stroke="none"/>
+<circle cx="327" cy="18" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="339" cy="406" r="1.5" fill="url(#gold)" stroke="none"/>
+<circle cx="219" cy="226" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="315" cy="235" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="185" cy="134" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="285" cy="431" r="0.9" fill="url(#gold)" stroke="none"/>
+<circle cx="103" cy="38" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="307" cy="280" r="1.5" fill="url(#gold)" stroke="none"/>
+<circle cx="502" cy="373" r="1.2" fill="url(#gold)" stroke="none"/>
+<circle cx="168" cy="359" r="0.9" fill="url(#gold)" stroke="none"/>
+<circle cx="300" cy="225" r="185" fill="url(#glow)" stroke="none"/>
+<circle cx="300" cy="225" r="150" stroke-width="1.2"/>
+<circle cx="300" cy="225" r="185" stroke-width=".8" stroke-dasharray="1 6"/>
+<circle cx="300" cy="225" r="112" stroke-width=".8" stroke-dasharray="2 5"/>
+<circle cx="300.0" cy="75.0" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<circle cx="375.0" cy="95.1" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M375.0,82.1 A13,13 0 0 1 375.0,108.1 A11.26,13 0 0 0 375.0,82.1Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="429.9" cy="150.0" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M429.9,137.0 A13,13 0 0 1 429.9,163.0 A6.50,13 0 0 0 429.9,137.0Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="450.0" cy="225.0" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M450.0,212.0 A13,13 0 0 1 450.0,238.0 A0.00,13 0 0 0 450.0,212.0Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="429.9" cy="300.0" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M429.9,287.0 A13,13 0 0 1 429.9,313.0 A6.50,13 0 0 1 429.9,287.0Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="375.0" cy="354.9" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M375.0,341.9 A13,13 0 0 1 375.0,367.9 A11.26,13 0 0 1 375.0,341.9Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="300.0" cy="375.0" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M300.0,362.0 A13,13 0 0 0 300.0,388.0 A13.00,13 0 0 0 300.0,362.0Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="225.0" cy="354.9" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M225.0,341.9 A13,13 0 0 0 225.0,367.9 A11.26,13 0 0 0 225.0,341.9Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="170.1" cy="300.0" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M170.1,287.0 A13,13 0 0 0 170.1,313.0 A6.50,13 0 0 0 170.1,287.0Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="150.0" cy="225.0" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M150.0,212.0 A13,13 0 0 0 150.0,238.0 A0.00,13 0 0 0 150.0,212.0Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="170.1" cy="150.0" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M170.1,137.0 A13,13 0 0 0 170.1,163.0 A6.50,13 0 0 1 170.1,137.0Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="225.0" cy="95.1" r="13" fill="#F7EFE2" stroke-width="1.2"/>
+<path d="M225.0,82.1 A13,13 0 0 0 225.0,108.1 A11.26,13 0 0 1 225.0,82.1Z" fill="url(#gold)" fill-opacity=".85" stroke="none"/>
+<circle cx="300" cy="225" r="34" stroke-width="1.8"/><circle cx="300" cy="225" r="6" fill="url(#gold)" stroke="none"/>
+<line x1="344.0" y1="225.0" x2="370.0" y2="225.0" stroke-width="1.2"/>
+<line x1="340.7" y1="241.8" x2="353.6" y2="247.2" stroke-width="0.8"/>
+<line x1="331.1" y1="256.1" x2="349.5" y2="274.5" stroke-width="1.2"/>
+<line x1="316.8" y1="265.7" x2="322.2" y2="278.6" stroke-width="0.8"/>
+<line x1="300.0" y1="269.0" x2="300.0" y2="295.0" stroke-width="1.2"/>
+<line x1="283.2" y1="265.7" x2="277.8" y2="278.6" stroke-width="0.8"/>
+<line x1="268.9" y1="256.1" x2="250.5" y2="274.5" stroke-width="1.2"/>
+<line x1="259.3" y1="241.8" x2="246.4" y2="247.2" stroke-width="0.8"/>
+<line x1="256.0" y1="225.0" x2="230.0" y2="225.0" stroke-width="1.2"/>
+<line x1="259.3" y1="208.2" x2="246.4" y2="202.8" stroke-width="0.8"/>
+<line x1="268.9" y1="193.9" x2="250.5" y2="175.5" stroke-width="1.2"/>
+<line x1="283.2" y1="184.3" x2="277.8" y2="171.4" stroke-width="0.8"/>
+<line x1="300.0" y1="181.0" x2="300.0" y2="155.0" stroke-width="1.2"/>
+<line x1="316.8" y1="184.3" x2="322.2" y2="171.4" stroke-width="0.8"/>
+<line x1="331.1" y1="193.9" x2="349.5" y2="175.5" stroke-width="1.2"/>
+<line x1="340.7" y1="208.2" x2="353.6" y2="202.8" stroke-width="0.8"/>
+<path d="M329.8,73.1 L338.8,80.1 L329.8,85.1" stroke-width="1.3" transform="rotate(15 338.8 80.1)"/>
+</g>
+</svg>

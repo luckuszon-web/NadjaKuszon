@@ -294,5 +294,16 @@
   const pad = (n) => String(n).padStart(2, "0");
   form.elements.dato.max = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`;
 
-  show("session", { focus: false, remember: false });
+  // ?ydelse=<id> fra bookingknapperne på pakkerne: vælg ydelsen og gå direkte til næste spørgsmål
+  const preset = new URLSearchParams(location.search).get("ydelse");
+  const presetButton = preset && steps.session.querySelector(`.bk-option[data-id="${CSS.escape(preset)}"]`);
+  if (presetButton) {
+    presetButton.setAttribute("aria-pressed", "true");
+    answers.session = presetButton.dataset.value;
+    answers.sessionDetail = presetButton.dataset.detail;
+    history.push("session");
+    show("kender", { focus: false, remember: false });
+  } else {
+    show("session", { focus: false, remember: false });
+  }
 })();
