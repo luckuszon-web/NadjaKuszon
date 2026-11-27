@@ -4,7 +4,7 @@
 <ul class="pakke-grid">
   {%- for s in services %}{% if s.main %}
   <li class="pakke"{% if not pakkeKort %} id="{{ s.id }}"{% endif %}>
-    <img class="pakke-billede" src="{{ s.image }}" alt="{{ s.alt }}" width="600" height="450" loading="lazy">
+    <img class="pakke-billede" src="{{ s.image }}" alt="{{ s.alt }}" width="960" height="640" loading="lazy">
     <div class="pakke-body">
       <h3 class="pakke-navn">{{ s.name }}</h3>
       <p class="pakke-sub">{{ s.subtitle }}</p>

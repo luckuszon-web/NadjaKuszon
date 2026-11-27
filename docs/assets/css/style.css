@@ -674,9 +674,11 @@ textarea.bk-input { resize: vertical; min-height: 110px; }
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
+  gap: 24px;
+  max-width: 940px;
+  margin-inline: auto;
 }
-@media (max-width: 760px) { .pakke-grid { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .pakke-grid { grid-template-columns: 1fr; max-width: 480px; } }
 
 .pakke {
   display: flex;
@@ -687,17 +689,17 @@ textarea.bk-input { resize: vertical; min-height: 110px; }
   border: 1px solid var(--gold-soft);
   scroll-margin-top: 100px;
 }
-.pakke-billede { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-bottom: 1px solid var(--gold-soft); }
-.pakke-body { display: flex; flex-direction: column; flex: 1; padding: clamp(24px, 4vw, 36px); }
-.pakke-navn { font-size: clamp(1.7rem, 3.4vw, 2.1rem); margin-bottom: .15em; }
-.pakke-sub { font-family: var(--font-head); font-style: italic; font-size: 1.3rem; line-height: 1.35; color: var(--ink-soft); margin-bottom: 1em; }
+.pakke-billede { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-bottom: 1px solid var(--gold-soft); }
+.pakke-body { display: flex; flex-direction: column; flex: 1; padding: clamp(22px, 3vw, 30px); font-size: 1.05rem; }
+.pakke-navn { font-size: clamp(1.6rem, 3vw, 1.9rem); margin-bottom: .15em; }
+.pakke-sub { font-family: var(--font-head); font-style: italic; font-size: 1.2rem; line-height: 1.35; color: var(--ink-soft); margin-bottom: 1em; }
 .pakke-forhvem { font-weight: 600; }
 .pakke-body p { margin-bottom: .9em; }
 
 .pakke-pris { margin: auto 0 0; padding-top: 1.2em; }
 .pakke-pris p { margin: 0; }
 .pakke-pris-label { font-size: .85rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--moss-dark); }
-.pakke-pris-belob { font-family: var(--font-head); font-size: clamp(2.3rem, 5vw, 2.8rem); font-weight: 600; line-height: 1.1; color: var(--ink); }
+.pakke-pris-belob { font-family: var(--font-head); font-size: clamp(2.1rem, 4.5vw, 2.5rem); font-weight: 600; line-height: 1.1; color: var(--ink); }
 .pakke-pris-fremtid { font-size: .95rem; color: var(--ink-soft); margin-top: 2px !important; }
 
 .pakke-detaljer {
@@ -717,8 +719,8 @@ textarea.bk-input { resize: vertical; min-height: 110px; }
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 28px;
-  max-width: 900px;
-  margin: 36px auto 0;
+  max-width: 940px;
+  margin: 28px auto 0;
   padding: clamp(24px, 4vw, 36px);
   background: var(--paper);
   border-radius: var(--radius);

@@ -15,8 +15,8 @@
     "priceLabel": "Introduktionspris",
     "futurePriceDisplay": "1.190 kr.",
     "details": "60 minutter · Zoom · Personlig forberedelse inkluderet",
-    "image": "/assets/img/ydelser/kend-dit-horoskop.svg",
-    "alt": "Illustration af et horoskophjul med tolv huse, sol, måne og ascendant",
+    "image": "/assets/img/ydelser/kend-dit-horoskop.jpg",
+    "alt": "Lys gennem et vindue med et gyldent horoskophjul med tolv huse, sol og måne",
     "url": "/astrologisk-terapi/#kend-dit-horoskop",
     "cta": "Book Kend dit horoskop"
   },
@@ -37,8 +37,8 @@
     "priceLabel": "Introduktionspris",
     "futurePriceDisplay": "1.190 kr.",
     "details": "60 minutter · Zoom · Personlig forberedelse inkluderet",
-    "image": "/assets/img/ydelser/kend-dit-potentiale.svg",
-    "alt": "Illustration af en opgående sol over horisonten med en vej og en kompasstjerne",
+    "image": "/assets/img/ydelser/kend-dit-potentiale.jpg",
+    "alt": "Kvinde med hat og åbne arme i solnedgang med en gylden opgående sol og kompasstjerne",
     "url": "/astrologisk-terapi/#kend-dit-potentiale",
     "cta": "Book Kend dit potentiale"
   },
@@ -59,8 +59,8 @@
     "priceLabel": "Introduktionspris",
     "futurePriceDisplay": "1.190 kr.",
     "details": "60 minutter · Zoom · Personlig forberedelse inkluderet",
-    "image": "/assets/img/ydelser/kend-dit-hjerte.svg",
-    "alt": "Illustration af et hjerte mellem Venus- og Mars-symbolerne under en halvmåne",
+    "image": "/assets/img/ydelser/kend-dit-hjerte.jpg",
+    "alt": "Bladskygger på gyldent stof med et hjerte mellem Venus, Mars og en halvmåne",
     "url": "/astrologisk-terapi/#kend-dit-hjerte",
     "cta": "Book Kend dit hjerte"
   },
@@ -83,8 +83,8 @@
     "priceLabel": "Introduktionspris",
     "futurePriceDisplay": "1.990 kr.",
     "details": "90 minutter · Zoom · Grundig astrologisk forberedelse inkluderet",
-    "image": "/assets/img/ydelser/kend-dit-aar.svg",
-    "alt": "Illustration af tolv månefaser i en bane om solen",
+    "image": "/assets/img/ydelser/kend-dit-aar.jpg",
+    "alt": "Lys gennem et vindue i et mørkt rum med tolv gyldne månefaser i en bane om solen",
     "url": "/astrologisk-terapi/#kend-dit-aar",
     "cta": "Book Kend dit år"
   },

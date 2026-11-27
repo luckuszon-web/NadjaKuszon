@@ -76,6 +76,13 @@ Allerede gjort, fordi specifikationen kræver det:
 
 ## Billeder til de fire astrologiske ydelser
 
-De fire pakker bruger lige nu tegnede SVG-illustrationer (`src/assets/img/ydelser/`). Billedet til en pakke skiftes ét sted: feltet `image` (og `alt`) i `src/_data/services.json`.
+De fire pakker bruger Nadjas egne fotos i en ensartet varm tone med gyldne himmelsymboler ovenpå (`src/assets/img/ydelser/*.jpg`, 960×640). Billedet til en pakke skiftes ét sted: feltet `image` (og `alt`) i `src/_data/services.json`.
 
-- [ ] Nadja sendte fem fotos i chatten (solnedgang over havet, kvinde med hat i solnedgang, gardin med bladskygger, cirkel af blade om et lys, lys gennem vinduet). De kom ikke med som filer. To af dem ligger allerede i repoet (`solnedgang-hat.jpg`, `lys-gennem-vindue.jpg`). Skal fotos bruges i stedet for illustrationerne – og i så fald hvilket foto til hvilken pakke?
+| Pakke | Foto | Symbol |
+|---|---|---|
+| Kend dit horoskop | Lys gennem vinduet (`lys-gennem-vindue.jpg`) | Horoskophjul |
+| Kend dit potentiale | Kvinde med hat i solnedgang (`solnedgang-hat.jpg`) | Opgående sol og kompasstjerne |
+| Kend dit hjerte | Bladskygger på gyldent stof (`bladskygger-stof.jpg`) | Hjerte, Venus, Mars og måne |
+| Kend dit år | Vindue i mørkt rum (`lys-vindue.jpg`) | Tolv månefaser om solen |
+
+- [ ] Nadja sendte også fotos af **solnedgang over havet**, **gardinet med bladskygger** og **cirklen af blade om lyset**, men de kom kun som visning i chatten og ikke som filer. Uploades de til `src/assets/img/`, kan de erstatte eller supplere billederne ovenfor.
