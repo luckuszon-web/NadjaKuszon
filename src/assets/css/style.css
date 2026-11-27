@@ -665,3 +665,117 @@ textarea.bk-input { resize: vertical; min-height: 110px; }
   .brand-sub-end { display: block; }
   .header-inner { gap: 10px; }
 }
+
+/* ---------- Astrologiske pakker ---------- */
+
+.pakke-grid {
+  list-style: none;
+  margin: 2em 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+@media (max-width: 760px) { .pakke-grid { grid-template-columns: 1fr; } }
+
+.pakke {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--gold-soft);
+  scroll-margin-top: 100px;
+}
+.pakke-billede { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-bottom: 1px solid var(--gold-soft); }
+.pakke-body { display: flex; flex-direction: column; flex: 1; padding: clamp(24px, 4vw, 36px); }
+.pakke-navn { font-size: clamp(1.7rem, 3.4vw, 2.1rem); margin-bottom: .15em; }
+.pakke-sub { font-family: var(--font-head); font-style: italic; font-size: 1.3rem; line-height: 1.35; color: var(--ink-soft); margin-bottom: 1em; }
+.pakke-forhvem { font-weight: 600; }
+.pakke-body p { margin-bottom: .9em; }
+
+.pakke-pris { margin: auto 0 0; padding-top: 1.2em; }
+.pakke-pris p { margin: 0; }
+.pakke-pris-label { font-size: .85rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--moss-dark); }
+.pakke-pris-belob { font-family: var(--font-head); font-size: clamp(2.3rem, 5vw, 2.8rem); font-weight: 600; line-height: 1.1; color: var(--ink); }
+.pakke-pris-fremtid { font-size: .95rem; color: var(--ink-soft); margin-top: 2px !important; }
+
+.pakke-detaljer {
+  margin: 1.1em 0 1.3em !important;
+  padding-top: 1em;
+  border-top: 1px solid var(--gold-soft);
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+.pakke-knapper { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+
+/* Den opfølgende tydning: mindre og selvstændig under pakkerne */
+.pakke-opfoelgning {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 28px;
+  max-width: 900px;
+  margin: 36px auto 0;
+  padding: clamp(24px, 4vw, 36px);
+  background: var(--paper);
+  border-radius: var(--radius);
+  border: 1px solid var(--gold-soft);
+  scroll-margin-top: 100px;
+}
+.pakke-opfoelgning .pakke-navn { font-size: clamp(1.5rem, 3vw, 1.8rem); padding-right: 60px; }
+.pakke-opfoelgning p { margin-bottom: .8em; }
+.pakke-opfoelgning-side { align-self: end; }
+.pakke-opfoelgning .pakke-pris { padding-top: 0; }
+.pakke-opfoelgning .pakke-pris-belob { font-size: 2.1rem; }
+.pakke-note { font-size: .95rem; font-style: italic; color: var(--ink-soft); }
+@media (max-width: 760px) { .pakke-opfoelgning { grid-template-columns: 1fr; gap: 8px; } }
+
+/* ---------- Prisoversigt (prissiden) ---------- */
+
+.price-heading { font-size: clamp(1.6rem, 3.4vw, 2rem); margin: 0 0 .5em; }
+.price-heading + .price-list { margin-top: .5em; }
+.price-table { width: 100%; border-collapse: collapse; margin: .5em 0 1em; }
+.price-table th, .price-table td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--gold-soft); vertical-align: middle; }
+.price-table thead th { font-size: .85rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); padding-top: 0; }
+.price-table tbody th { font-weight: 500; }
+.price-table .price-name { display: block; color: var(--ink); text-decoration: none; }
+.price-table .price-name:hover { text-decoration: underline; text-decoration-color: var(--gold); }
+.price-table .price-meta { display: block; }
+.price-now { font-weight: 700; font-size: 1.2rem; color: var(--ink); white-space: nowrap; }
+.price-now-label, .price-future-label { display: none; }
+.price-future { color: var(--ink-soft); white-space: nowrap; }
+@media (max-width: 600px) {
+  .price-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .price-table tr { display: block; padding: 14px 0; border-bottom: 1px solid var(--gold-soft); }
+  .price-table th, .price-table td { display: block; border: 0; padding: 2px 0; }
+  .price-now-label, .price-future-label { display: inline; font-size: .85rem; font-weight: 600; color: var(--ink-soft); margin-right: 6px; }
+  .price-now { font-size: 1.15rem; }
+}
+
+/* ---------- Foredrag & events: Mit univers ---------- */
+
+.event-afsnit { margin: 2em 0; padding-top: 1.6em; border-top: 1px solid var(--gold); }
+.event-afsnit h3 { font-size: clamp(1.5rem, 3.2vw, 1.8rem); margin-top: 0; }
+.event-liste { list-style: none; padding: 0 !important; margin: 0 0 1.2em; }
+.event-liste li {
+  position: relative;
+  padding: 12px 0 12px 30px;
+  border-bottom: 1px solid var(--gold-soft);
+  margin: 0;
+}
+.event-liste li:last-child { border-bottom: 0; }
+.event-liste li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1.15em;
+  width: 13px;
+  height: 13px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+}
+.event-liste strong { font-weight: 700; }
+@media (max-width: 600px) { .event-liste strong { display: block; } }

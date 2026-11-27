@@ -1,0 +1,59 @@
+{#- De fire astrologiske pakker (to og to på computer, under hinanden på mobil) og den opfølgende tydning.
+    Al tekst og alle priser kommer fra src/_data/services.json.
+    Sæt pakkeKort = true for den korte udgave (forsiden). #}
+<ul class="pakke-grid">
+  {%- for s in services %}{% if s.main %}
+  <li class="pakke"{% if not pakkeKort %} id="{{ s.id }}"{% endif %}>
+    <img class="pakke-billede" src="{{ s.image }}" alt="{{ s.alt }}" width="600" height="450" loading="lazy">
+    <div class="pakke-body">
+      <h3 class="pakke-navn">{{ s.name }}</h3>
+      <p class="pakke-sub">{{ s.subtitle }}</p>
+      <p class="pakke-forhvem">{{ s.forHvem }}</p>
+      {%- if not pakkeKort %}
+      {%- for p in s.tekst %}
+      <p>{{ p }}</p>
+      {%- endfor %}
+      {%- endif %}
+      <div class="pakke-pris">
+        <p class="pakke-pris-label">{{ s.priceLabel }}</p>
+        <p class="pakke-pris-belob">{{ s.priceDisplay }}</p>
+        {%- if s.futurePriceDisplay %}
+        <p class="pakke-pris-fremtid">Forventet fremtidig pris: {{ s.futurePriceDisplay }}</p>
+        {%- endif %}
+      </div>
+      <p class="pakke-detaljer">{{ s.details }}</p>
+      <div class="pakke-knapper">
+        <a class="btn" href="/kontakt/?ydelse={{ s.id }}#book">{{ s.cta }}</a>
+        {%- if pakkeKort %}
+        <a class="text-link" href="{{ s.url }}">Læs mere<span class="visually-hidden"> om {{ s.name }}</span></a>
+        {%- endif %}
+      </div>
+    </div>
+  </li>
+  {%- endif %}{% endfor %}
+</ul>
+
+{%- for s in services %}{% if not s.main %}
+<div class="pakke-opfoelgning"{% if not pakkeKort %} id="{{ s.id }}"{% endif %}>
+  <span class="service-ring" aria-hidden="true"></span>
+  <div class="pakke-opfoelgning-tekst">
+    <h3 class="pakke-navn">{{ s.name }}</h3>
+    <p class="pakke-sub">{{ s.subtitle }}</p>
+    <p class="pakke-forhvem">{{ s.forHvem }}</p>
+    {%- if not pakkeKort %}
+    {%- for p in s.tekst %}
+    <p>{{ p }}</p>
+    {%- endfor %}
+    {%- endif %}
+  </div>
+  <div class="pakke-opfoelgning-side">
+    <div class="pakke-pris">
+      <p class="pakke-pris-label">{{ s.priceLabel }}</p>
+      <p class="pakke-pris-belob">{{ s.priceDisplay }}</p>
+    </div>
+    <p class="pakke-detaljer">{{ s.details }}</p>
+    <p class="pakke-note">{{ s.note }}</p>
+    <a class="btn btn-ghost" href="/kontakt/?ydelse={{ s.id }}#book">{{ s.cta }}</a>
+  </div>
+</div>
+{%- endif %}{% endfor %}

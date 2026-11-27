@@ -3,7 +3,7 @@ scripts: ["booking.js"]
 layout: layouts/base.njk
 title: Kontakt
 metaTitle: Book tid eller kontakt Nadja Kuszon
-description: Book en dybdegående horoskoptydning eller kontakt astrolog Nadja Kuszon. Skriv en sms, ring på 21 21 88 94 eller send en mail. Sessioner online via Zoom.
+description: Book en personlig horoskoptydning eller kontakt astrolog Nadja Kuszon. Skriv en sms, ring på 21 21 88 94 eller send en mail. Sessioner online via Zoom.
 permalink: /kontakt/
 schema: ["person"]
 ---
@@ -43,7 +43,7 @@ schema: ["person"]
     <p>Alle sessioner foregår online via Zoom.</p>
     <ul class="ring-list">
       {%- for s in services %}
-      <li><a href="{{ s.url }}">{{ s.name }}</a> – {{ s.minutes }} minutter · {{ s.priceDisplay }}</li>
+      <li><a href="{{ s.url }}">{{ s.name }}</a> – {{ s.minutes }} minutter · {{ s.priceDisplay }}{% if s.note %} · kun for tidligere klienter{% endif %}</li>
       {%- endfor %}
     </ul>
     {#- TODO(Nadja): afbudsregler – vises her, når de er afklaret. Se TODO.md. #}

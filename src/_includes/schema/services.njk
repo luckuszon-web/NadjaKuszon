@@ -6,9 +6,9 @@
     {
       "@type": "Service",
       "@id": "{{ s.url | absoluteUrl(site.url) }}#service",
-      "name": "{{ s.fullName }}",
+      "name": {{ s.name | json | safe }},
       "serviceType": "Horoskoptydning",
-      "description": "{{ s.summary }}",
+      "description": {{ s.subtitle | json | safe }},
       "provider": { "@type": "Person", "@id": "{{ site.url }}/#nadja", "name": "Nadja Kuszon" },
       "areaServed": { "@type": "Country", "name": "Danmark" },
       "availableChannel": { "@type": "ServiceChannel", "name": "Online via Zoom" },
@@ -17,8 +17,8 @@
         "@type": "Offer",
         "price": "{{ s.price }}",
         "priceCurrency": "DKK",
-        "url": "{{ site.url }}/kontakt/",
-        "description": "{{ s.minutes }} minutter"
+        "url": "{{ site.url }}/kontakt/?ydelse={{ s.id }}",
+        "description": {{ (s.minutes ~ " minutter · " ~ s.priceLabel) | json | safe }}
       }
     }{% if not loop.last %},{% endif %}
     {%- endfor %}

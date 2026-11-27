@@ -15,7 +15,7 @@ Spammen er fjernet fra den nye side og fra Word-arkivet i `tekstarkiv/`.
 | # | Spørgsmål | Hvor i koden | Status nu |
 |---|---|---|---|
 | 1 | Hvad er svaret, hvis kunden ikke kender sit fødselstidspunkt? | `src/_data/faq.json` | Spørgsmålet er skjult i FAQ'en |
-| 2 | Er de 90 minutter selve sessionen, eller indgår forberedelsen i de 90 minutter? | `src/astrologisk-terapi.njk` | Viser "90 minutter · 1.490 kr. · Forberedelse er inkluderet i prisen" |
+| 2 | ~~Varighed og forberedelse~~ | `src/_data/services.json` | ✅ Afklaret: varigheden er selve tydningen, og forberedelsen er inkluderet i prisen |
 | 3 | ~~Moms~~ | `src/_data/priser.json` | ✅ Den gamle prisside: "Alle priser er inkl. moms". Står nu i prisrubrikken |
 | 4 | **Afbud:** Prisrubrikken og FAQ'en bruger nu reglen fra den gamle prisside (48 timer, ellers 500 kr.). Den gamle kontaktside sagde 24 timer/fuld pris. Er 48 timer/500 kr. korrekt? | `src/_data/priser.json`, `src/_data/faq.json` | Vises |
 | 5 | Bookingsystem: der er intet i dag. Booking sker via sms, telefon og mail, så der er intet eksternt system at rydde op i. Ønskes et online bookingsystem? | `src/kontakt.njk` | Knapperne fører til kontaktsiden |
@@ -31,7 +31,7 @@ Spammen er fjernet fra den nye side og fra Word-arkivet i `tekstarkiv/`.
 | 15 | **Adresse:** Den gamle footer linkede til Søndre Jernbanevej 4E, Hillerød. Den nye side skriver kun "Online via Zoom". Skal en adresse stå? | `src/_data/site.json` | Ikke vist |
 | 16 | **Statistik:** Den gamle Google Analytics-kode virker ikke længere. Ønskes ny statistik? I så fald anbefales en cookiefri løsning (fx Plausible), så der ikke skal være cookiebanner. | – | Ingen statistik |
 | 17 | **Bookinglink:** "Book din horoskoptydning" skal føre direkte til booking. Der findes intet bookingsystem, så knapperne fører til bookingafsnittet på kontaktsiden (`/kontakt/#book`). Har Nadja et bookinglink (fx SimplyBook, Planway eller Calendly)? Det skal kun rettes ét sted. | `src/_data/site.json` → `bookingUrl` | Fører til kontaktsiden |
-| 18 | **Introduktionspris:** Forsiden tilbyder nu 30 minutter for 600 kr. i introduktionspris, mens kortene længere nede og siden Horoskoptydning stadig viser 90 min./1.490 kr. og 60 min./990 kr. Erstatter introduktionstilbuddet de to andre, eller skal alle tre stå? Hvor længe gælder introduktionsprisen? | `src/index.njk`, `src/_data/services.json` | Alle tre vises |
+| 18 | ~~Introduktionspris~~ | `src/_data/services.json` | ✅ Afklaret: fire pakker + opfølgende tydning med introduktionspris og forventet fremtidig pris |
 
 ## Anbefalinger, der ikke bruges
 
@@ -73,3 +73,9 @@ Allerede gjort, fordi specifikationen kræver det:
 - **`docs/` skal genbygges** med `npm run build:pages`, før der committes ændringer, ellers viser previewet den gamle version.
 - **Ved flytning:** Se "Ved flytning til domænet" i `REDIRECTS.md` (Netlify/Cloudflare Pages, DNS, http/www → https).
 - **Domæne og DNS:** Hvem styrer domænet (registrar/DNS)? Kører der e-mail på domænet? (I dag bruges en Gmail-adresse.)
+
+## Billeder til de fire astrologiske ydelser
+
+De fire pakker bruger lige nu tegnede SVG-illustrationer (`src/assets/img/ydelser/`). Billedet til en pakke skiftes ét sted: feltet `image` (og `alt`) i `src/_data/services.json`.
+
+- [ ] Nadja sendte fem fotos i chatten (solnedgang over havet, kvinde med hat i solnedgang, gardin med bladskygger, cirkel af blade om et lys, lys gennem vinduet). De kom ikke med som filer. To af dem ligger allerede i repoet (`solnedgang-hat.jpg`, `lys-gennem-vindue.jpg`). Skal fotos bruges i stedet for illustrationerne – og i så fald hvilket foto til hvilken pakke?

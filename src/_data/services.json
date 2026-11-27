@@ -1,38 +1,111 @@
 [
   {
-    "id": "intro",
-    "name": "Personlig horoskoptydning",
-    "fullName": "Personlig horoskoptydning (introduktionspris)",
-    "minutes": 30,
+    "id": "kend-dit-horoskop",
+    "main": true,
+    "name": "Kend dit horoskop",
+    "subtitle": "En introduktion til dit personlige fødselshoroskop",
+    "forHvem": "For dig, der er nysgerrig på, hvem du er, hvad der driver dig, og hvilke styrker og udfordringer der ligger i dit horoskop.",
+    "tekst": [
+      "Vi ser blandt andet på din Sol, Måne og ascendant, dine personlige ressourcer og de vigtigste temaer, der træder frem i dit fødselshoroskop.",
+      "Du får en større forståelse af din personlighed, dine følelsesmæssige behov og de potentialer, du er født med."
+    ],
+    "minutes": 60,
     "price": 600,
     "priceDisplay": "600 kr.",
-    "summary": "Dit fødselshoroskop og dine aktuelle transitter koblet til det, du står i lige nu. Tag gerne en konkret situation eller et spørgsmål med.",
-    "note": "Introduktionspris",
-    "cta": "Book din horoskoptydning",
-    "url": "/priser/"
+    "priceLabel": "Introduktionspris",
+    "futurePriceDisplay": "1.190 kr.",
+    "details": "60 minutter · Zoom · Personlig forberedelse inkluderet",
+    "image": "/assets/img/ydelser/kend-dit-horoskop.svg",
+    "alt": "Illustration af et horoskophjul med tolv huse, sol, måne og ascendant",
+    "url": "/astrologisk-terapi/#kend-dit-horoskop",
+    "cta": "Book Kend dit horoskop"
   },
   {
-    "id": "horoskoptydning",
-    "name": "Dybdegående horoskoptydning",
-    "fullName": "Dybdegående horoskoptydning",
+    "id": "kend-dit-potentiale",
+    "main": true,
+    "name": "Kend dit potentiale",
+    "subtitle": "Personlighed, talenter og livsretning",
+    "forHvem": "For dig, der ønsker at forstå dine muligheder, opdage uudnyttede ressourcer eller finde en ny retning i dit liv.",
+    "tekst": [
+      "Måske står du ved en skillevej, føler dig fastlåst i dit arbejdsliv eller mærker et behov for forandring.",
+      "Vi undersøger dine naturlige talenter, dine styrker, din måde at handle på, og hvilke mønstre der kan stå i vejen for, at du udfolder dit fulde potentiale.",
+      "Vi ser også på, hvad der giver dig mening, og hvordan du kan arbejde mere bevidst med din personlige udvikling og livsretning."
+    ],
+    "minutes": 60,
+    "price": 600,
+    "priceDisplay": "600 kr.",
+    "priceLabel": "Introduktionspris",
+    "futurePriceDisplay": "1.190 kr.",
+    "details": "60 minutter · Zoom · Personlig forberedelse inkluderet",
+    "image": "/assets/img/ydelser/kend-dit-potentiale.svg",
+    "alt": "Illustration af en opgående sol over horisonten med en vej og en kompasstjerne",
+    "url": "/astrologisk-terapi/#kend-dit-potentiale",
+    "cta": "Book Kend dit potentiale"
+  },
+  {
+    "id": "kend-dit-hjerte",
+    "main": true,
+    "name": "Kend dit hjerte",
+    "subtitle": "Kærlighed, relationer og følelsesmæssige mønstre",
+    "forHvem": "For dig, der ønsker en dybere forståelse af dit kærlighedsliv, dine relationer og de mønstre, du gentager i mødet med andre.",
+    "tekst": [
+      "Hvorfor tiltrækkes du af bestemte mennesker? Hvad har du brug for for at føle dig elsket og tryg? Og hvordan kan du skabe mere bevidste og nærværende relationer?",
+      "Vi undersøger blandt andet din Venus, Mars, Måne og de astrologiske områder, der fortæller om kærlighed, tiltrækning, følelsesmæssige behov og parforhold.",
+      "Med min baggrund som sexolog og parterapeut kombinerer jeg den astrologiske forståelse med et terapeutisk blik på relationer og personlige udviklingsmønstre."
+    ],
+    "minutes": 60,
+    "price": 600,
+    "priceDisplay": "600 kr.",
+    "priceLabel": "Introduktionspris",
+    "futurePriceDisplay": "1.190 kr.",
+    "details": "60 minutter · Zoom · Personlig forberedelse inkluderet",
+    "image": "/assets/img/ydelser/kend-dit-hjerte.svg",
+    "alt": "Illustration af et hjerte mellem Venus- og Mars-symbolerne under en halvmåne",
+    "url": "/astrologisk-terapi/#kend-dit-hjerte",
+    "cta": "Book Kend dit hjerte"
+  },
+  {
+    "id": "kend-dit-aar",
+    "main": true,
+    "name": "Kend dit år",
+    "subtitle": "Hvilke astrologiske energier er på spil i dit liv de næste 12 måneder?",
+    "forHvem": "For dig, der står over for forandringer, mærker nye muligheder eller ønsker at forstå, hvilken livsfase du bevæger dig igennem.",
+    "tekst": [
+      "Nogle perioder i livet kalder på handling, mens andre inviterer til fordybelse, forandring eller afslutning af gamle mønstre.",
+      "Gennem en analyse af dine aktuelle og kommende transitter samt progressioner undersøger vi, hvilke områder af dit liv der bliver særligt aktiveret.",
+      "Det kan eksempelvis handle om kærlighed, relationer, arbejdsliv, økonomi, familie eller personlig udvikling.",
+      "Vi ser på de vigtigste astrologiske perioder i de kommende 12 måneder, og hvordan du kan arbejde bevidst med de muligheder og udfordringer, de symboliserer.",
+      "Formålet er ikke at forudsige din fremtid som noget fastlagt, men at give dig større indsigt i de udviklingsprocesser og potentialer, der kan udfolde sig."
+    ],
     "minutes": 90,
-    "price": 1490,
-    "priceDisplay": "1.490 kr.",
-    "summary": "Jeg analyserer dit fødselshoroskop før sessionen, og sammen forbinder vi de vigtigste tråde med dit virkelige liv.",
-    "note": "Forberedelse er inkluderet i prisen",
-    "cta": "Book din horoskoptydning",
-    "url": "/astrologisk-terapi/#horoskoptydning"
+    "price": 995,
+    "priceDisplay": "995 kr.",
+    "priceLabel": "Introduktionspris",
+    "futurePriceDisplay": "1.990 kr.",
+    "details": "90 minutter · Zoom · Grundig astrologisk forberedelse inkluderet",
+    "image": "/assets/img/ydelser/kend-dit-aar.svg",
+    "alt": "Illustration af tolv månefaser i en bane om solen",
+    "url": "/astrologisk-terapi/#kend-dit-aar",
+    "cta": "Book Kend dit år"
   },
   {
     "id": "opfoelgning",
-    "name": "Opfølgende horoskoptydning",
-    "fullName": "Opfølgende horoskoptydning",
-    "minutes": 60,
-    "price": 990,
-    "priceDisplay": "990 kr.",
-    "summary": "Efter din grundtydning går vi i dybden med et bestemt livsområde eller et mønster, der fylder hos dig.",
-    "note": "Kræver en grundtydning først",
-    "cta": "Book en opfølgende session",
-    "url": "/astrologisk-terapi/#opfoelgning"
+    "main": false,
+    "name": "Opfølgende astrologisk tydning",
+    "subtitle": "Når du ønsker at gå et spadestik dybere",
+    "forHvem": "For dig, der tidligere har fået en personlig horoskoptydning hos mig og ønsker at arbejde videre med et bestemt tema.",
+    "tekst": [
+      "Måske er der opstået nye spørgsmål, du står i en ny livssituation, eller du ønsker at få belyst et særligt område af dit horoskop.",
+      "Vi tager udgangspunkt i dit eksisterende horoskop og den tidligere tydning."
+    ],
+    "minutes": 30,
+    "price": 600,
+    "priceDisplay": "600 kr.",
+    "priceLabel": "Fast pris",
+    "futurePriceDisplay": "",
+    "details": "30 minutter · Zoom",
+    "note": "Denne ydelse er kun for tidligere klienter.",
+    "url": "/astrologisk-terapi/#opfoelgning",
+    "cta": "Book opfølgende tydning"
   }
 ]

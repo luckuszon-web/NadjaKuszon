@@ -1,16 +1,37 @@
+{#- Prisrubrik. Ydelser og priser hentes fra services.json, tillæg, betaling og afbud fra priser.json. #}
 <section class="section{% if not priserSide %} section-tint{% endif %}" id="priser"{% if not priserSide %} aria-labelledby="priser-titel"{% endif %}>
   <div class="container narrow">
     {%- if not priserSide %}
     <h2 id="priser-titel">Priser</h2>
     {%- endif %}
-    <ul class="price-list{% if priserSide %} price-list-page{% endif %}">
-      {%- for s in services %}
-      <li>
-        <span class="price-name">{{ s.name }}{% if s.note == "Introduktionspris" %} <span class="price-tag">Introduktionspris</span>{% endif %}</span>
-        <span class="price-meta">{{ s.minutes }} minutter · online via Zoom{% if s.id == "horoskoptydning" %} · forberedelse inkluderet{% endif %}{% if s.id == "opfoelgning" %} · efter en grundtydning{% endif %}</span>
-        <span class="price-amount">{{ s.priceDisplay }}</span>
-      </li>
-      {%- endfor %}
+
+    <h2 class="price-heading">Horoskoptydninger</h2>
+    <table class="price-table">
+      <caption class="visually-hidden">Priser på horoskoptydninger</caption>
+      <thead>
+        <tr>
+          <th scope="col">Ydelse</th>
+          <th scope="col">Aktuel pris</th>
+          <th scope="col">Fremtidig pris</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for s in services %}
+        <tr>
+          <th scope="row">
+            <a class="price-name" href="{{ s.url }}">{{ s.name }}</a>
+            <span class="price-meta">{{ s.minutes }} minutter · Zoom{% if s.note %} · kun for tidligere klienter{% endif %}</span>
+          </th>
+          <td class="price-now"><span class="price-now-label">{{ s.priceLabel }}</span> {{ s.priceDisplay }}</td>
+          <td class="price-future"><span class="price-future-label">Fremtidig pris</span> {{ s.futurePriceDisplay or s.priceDisplay }}</td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+    <p class="price-note">Al astrologisk forberedelse er inkluderet i prisen. Der medfølger ikke en skriftlig rapport. <a href="/astrologisk-terapi/#pakker-titel">Læs om de enkelte tydninger</a>.</p>
+
+    <h2 class="price-heading">Foredrag, events m.m.</h2>
+    <ul class="price-list">
       {%- for t in priser.tillaeg %}
       <li>
         <span class="price-name">{{ t.navn }}</span>
@@ -19,6 +40,8 @@
       </li>
       {%- endfor %}
     </ul>
+    <p class="price-note"><a href="/foredrag-og-events/">Læs om foredrag og events</a></p>
+
     <p class="price-note">{{ priser.moms }}</p>
     <div class="price-info">
       <div>

@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Personlig horoskoptydning
 metaTitle: Personlig horoskoptydning online | Nadja Kuszon
-description: Få en dybdegående tydning af dit fødselshoroskop online. Horoskoptydning om identitet, relationer og mønstre. 90 min. 1.490 kr. Opfølgning 990 kr.
+description: "Personlig horoskoptydning online: Kend dit horoskop, dit potentiale, dit hjerte eller dit år. Introduktionspriser fra 600 kr. Tydning på Zoom."
 permalink: /astrologisk-terapi/
 schema: ["services", "faq"]
 ---
@@ -10,7 +10,48 @@ schema: ["services", "faq"]
   {% set orbitClass = "orbit-page" %}{% include "partials/orbit.njk" %}
   <div class="container narrow">
     <h1>Personlig horoskoptydning</h1>
-    <p class="hero-lead">Dybdegående horoskoptydning online – med udgangspunkt i dit fødselshoroskop og dit liv.</p>
+    <p class="hero-lead">Vælg din tydning ud fra det område af dit liv, du ønsker indsigt i.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow prose">
+    <h2>Dit horoskop – et personligt landkort over dit liv</h2>
+    <p class="lead">Dit fødselshoroskop fortæller om dine potentialer, styrker, udfordringer, relationer og udviklingsmuligheder.</p>
+    <p>Gennem astrologien kan du få en dybere forståelse af dig selv, dine mønstre og de livstemaer, du står i.</p>
+    <p>Uanset om du søger indsigt i kærlighed, arbejdsliv, personlig udvikling eller de astrologiske energier, der påvirker dit liv lige nu, kan en horoskoptydning give dig nye perspektiver og større bevidsthed om dine muligheder.</p>
+  </div>
+</section>
+
+<section class="section section-tint" aria-labelledby="pakker-titel">
+  <div class="container">
+    <h2 class="section-title center" id="pakker-titel">Vælg din horoskoptydning</h2>
+    {% set pakkeKort = false %}
+    {% include "partials/pakker.njk" %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow prose">
+    <h2>Sådan foregår en horoskoptydning</h2>
+    <p>Inden vores samtale forbereder jeg mig personligt og grundigt ud fra dit fødselshoroskop og det område, du ønsker indsigt i.</p>
+    <p>Til tydningen skal jeg bruge din fødselsdato, dit præcise fødselstidspunkt og dit fødested.</p>
+    <p>Selve tydningen foregår på Zoom, hvor jeg mundtligt gennemgår min astrologiske analyse.</p>
+    <p>Der er plads til spørgsmål, refleksion og dialog undervejs, så vi kan gå i dybden med det, der er relevant for dig.</p>
+    <ul class="ring-list">
+      <li>Al astrologisk forberedelse er inkluderet i prisen.</li>
+      <li>Der medfølger ikke en skriftlig rapport.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="container narrow prose">
+    <h2>Introduktionspriser – en del af min astrologiske rejse</h2>
+    <p>Jeg er i gang med min videreuddannelse inden for astrologi og tilbyder derfor i en periode mine personlige horoskoptydninger til særlige introduktionspriser.</p>
+    <p>Jeg har allerede arbejdet med over 200 horoskoper og anvender astrologien som et redskab til større selvindsigt, bevidsthed og personlig udvikling.</p>
+    <p>Introduktionspriserne giver dig mulighed for at opleve en personlig astrologisk tydning til en lavere pris, mens jeg fortsætter med at fordybe og videreudvikle mit astrologiske arbejde.</p>
+    <a class="text-link" href="/priser/">Se prisoversigten</a>
   </div>
 </section>
 
@@ -61,37 +102,6 @@ schema: ["services", "faq"]
       <p>Det særlige ved mit arbejde er mødet mellem astrologiens symbolsprog, min terapeutiske erfaring og min evne til at se mennesket bag horoskopet.</p>
       <p>Du bliver ikke analyseret på afstand. Du bliver inviteret ind i en samtale, hvor der er plads til både det, du allerede ved om dig selv, og det, du endnu ikke har fået øje på.</p>
       <a class="text-link" href="/om-nadja/">Læs mere om min baggrund</a>
-    </div>
-  </div>
-</section>
-
-<section class="section section-tint" id="horoskoptydning">
-  <div class="container narrow">
-    <div class="offer">
-      <span class="service-ring" aria-hidden="true"></span>
-      <h2>Dybdegående tydning af dit fødselshoroskop</h2>
-      <p>Inden vores første session analyserer jeg dit fødselshoroskop og finder de mønstre og temaer, der står stærkest.</p>
-      <p>Under sessionen gennemgår vi ikke mekanisk alt i horoskopet. Vi samler de vigtigste tråde og forbinder dem med dit virkelige liv.</p>
-      <p>Du får en dybere forståelse af, hvem du er, hvad du har brug for, hvilke mønstre der påvirker dig, og hvor dine vigtigste udviklingsmuligheder ligger.</p>
-      {#- TODO(Nadja): er de 90 minutter selve sessionen, eller indgår forberedelsen? Er priserne inkl. moms? Se TODO.md. #}
-      <p class="offer-facts">90 minutter · 1.490 kr. · Forberedelse er inkluderet i prisen</p>
-      <p>Sessionen foregår online via Zoom. Du er velkommen til selv at optage sessionen, så du kan lytte til den igen.</p>
-      <a class="btn" href="/kontakt/">Book din horoskoptydning</a>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="opfoelgning">
-  <div class="container narrow">
-    <div class="offer">
-      <span class="service-ring" aria-hidden="true"></span>
-      <h2>Opfølgende horoskoptydning</h2>
-      <p>Et fødselshoroskop indeholder langt mere, end vi kan udfolde i én session.</p>
-      <p>Efter din grundtydning kan vi arbejde videre med et bestemt livsområde eller mønster. Det kan eksempelvis være kærlighed, relationer, barndom, selvværd, seksualitet, grænsesætning, arbejdsliv eller en indre konflikt, der bliver ved med at vende tilbage.</p>
-      <p>Fordi jeg allerede kender dit horoskop, kan vi gå mere direkte ind i det tema, der fylder hos dig.</p>
-      <p class="offer-facts">60 minutter · 990 kr.</p>
-      <p>Sessionen foregår online via Zoom.</p>
-      <a class="btn" href="/kontakt/">Book en opfølgende session</a>
     </div>
   </div>
 </section>

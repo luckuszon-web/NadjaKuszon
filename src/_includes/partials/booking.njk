@@ -27,10 +27,10 @@
       <h3 class="bk-question" id="bk-q-session" tabindex="-1">Hvilken session vil du booke?</h3>
       <div class="bk-options" role="group" aria-labelledby="bk-q-session">
         {%- for s in services %}
-        <button type="button" class="bk-option" data-field="session" data-value="{{ s.name }}" data-detail="{{ s.minutes }} min. · {{ s.priceDisplay }}" aria-pressed="false">
+        <button type="button" class="bk-option" data-field="session" data-id="{{ s.id }}" data-value="{{ s.name }}" data-detail="{{ s.minutes }} min. · {{ s.priceDisplay }}" aria-pressed="false">
           <span class="bk-option-text">
             <span class="bk-option-title">{{ s.name }}</span>
-            <span class="bk-option-sub">{{ s.minutes }} minutter · {{ s.priceDisplay }}</span>
+            <span class="bk-option-sub">{{ s.minutes }} minutter · {{ s.priceDisplay }} ({{ s.priceLabel | lower }}){% if s.note %} · kun for tidligere klienter{% endif %}</span>
           </span>
           <span class="bk-check" aria-hidden="true"></span>
         </button>
